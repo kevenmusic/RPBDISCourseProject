@@ -1,0 +1,282 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\data\\marriageagencycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|solutionrelative:marriageagency\\data\\marriageagencycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|solutionrelative:marriageagency\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\models\\zodiacsign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|solutionrelative:marriageagency\\models\\zodiacsign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\models\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|solutionrelative:marriageagency\\models\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\models\\physicalattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|solutionrelative:marriageagency\\models\\physicalattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\models\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|solutionrelative:marriageagency\\models\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\models\\nationality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|solutionrelative:marriageagency\\models\\nationality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|solutionrelative:marriageagency\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|solutionrelative:marriageagency\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|solutionrelative:marriageagency\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|solutionrelative:marriageagency\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\models\\additionalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|solutionrelative:marriageagency\\models\\additionalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|solutionrelative:marriageagency\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|solutionrelative:marriageagency\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|solutionrelative:marriageagency\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Nationality.cs",
+              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Models\\Nationality.cs",
+              "RelativeDocumentMoniker": "MarriageAgency\\Models\\Nationality.cs",
+              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Models\\Nationality.cs",
+              "RelativeToolTip": "MarriageAgency\\Models\\Nationality.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T07:15:29.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "MarriageAgency\\Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Models\\Employee.cs",
+              "RelativeToolTip": "MarriageAgency\\Models\\Employee.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAswBsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T07:08:05.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "MarriageAgency\\Models\\Client.cs",
+              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Models\\Client.cs",
+              "RelativeToolTip": "MarriageAgency\\Models\\Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T06:23:09.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Models\\Contact.cs",
+              "RelativeDocumentMoniker": "MarriageAgency\\Models\\Contact.cs",
+              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Models\\Contact.cs",
+              "RelativeToolTip": "MarriageAgency\\Models\\Contact.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAowBUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T07:14:31.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Photo.cs",
+              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Models\\Photo.cs",
+              "RelativeDocumentMoniker": "MarriageAgency\\Models\\Photo.cs",
+              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Models\\Photo.cs",
+              "RelativeToolTip": "MarriageAgency\\Models\\Photo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T07:15:58.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "MarriageAgency\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "MarriageAgency\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T06:24:51.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PhysicalAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Models\\PhysicalAttribute.cs",
+              "RelativeDocumentMoniker": "MarriageAgency\\Models\\PhysicalAttribute.cs",
+              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Models\\PhysicalAttribute.cs",
+              "RelativeToolTip": "MarriageAgency\\Models\\PhysicalAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T06:23:48.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Service.cs",
+              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Models\\Service.cs",
+              "RelativeDocumentMoniker": "MarriageAgency\\Models\\Service.cs",
+              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Models\\Service.cs",
+              "RelativeToolTip": "MarriageAgency\\Models\\Service.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T07:18:40.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ZodiacSign.cs",
+              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Models\\ZodiacSign.cs",
+              "RelativeDocumentMoniker": "MarriageAgency\\Models\\ZodiacSign.cs",
+              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Models\\ZodiacSign.cs",
+              "RelativeToolTip": "MarriageAgency\\Models\\ZodiacSign.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T07:19:13.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "MarriageAgency\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "MarriageAgency\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T06:22:44.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MarriageAgencyContext.cs",
+              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Data\\MarriageAgencyContext.cs",
+              "RelativeDocumentMoniker": "MarriageAgency\\Data\\MarriageAgencyContext.cs",
+              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Data\\MarriageAgencyContext.cs",
+              "RelativeToolTip": "MarriageAgency\\Data\\MarriageAgencyContext.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAcwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T06:22:50.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AdditionalService.cs",
+              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Models\\AdditionalService.cs",
+              "RelativeDocumentMoniker": "MarriageAgency\\Models\\AdditionalService.cs",
+              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Models\\AdditionalService.cs",
+              "RelativeToolTip": "MarriageAgency\\Models\\AdditionalService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T06:36:48.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Program.cs",
+              "RelativeDocumentMoniker": "MarriageAgency\\Program.cs",
+              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Program.cs",
+              "RelativeToolTip": "MarriageAgency\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T06:24:33.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\appsettings.json",
+              "RelativeDocumentMoniker": "MarriageAgency\\appsettings.json",
+              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\appsettings.json",
+              "RelativeToolTip": "MarriageAgency\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-02T06:25:38.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MarriageAgency\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MarriageAgency\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA1wA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T06:58:13.118Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
