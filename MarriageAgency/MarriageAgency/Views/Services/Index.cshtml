@@ -1,0 +1,135 @@
+﻿@using MarriageAgency.ViewModels.ServicesViewModel;
+@model ServicesViewModel
+
+@{
+    ViewData["Title"] = "Клиенты";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    string ClientName = Model.FilterServicesViewModel.ClientName;
+    string EmployeeName = Model.FilterServicesViewModel.EmployeeName;
+    string AdditionalServiceName = Model.FilterServicesViewModel.AdditionalServiceName;
+    decimal? MinCost = Model.FilterServicesViewModel.MinCost;
+    decimal? MaxCost = Model.FilterServicesViewModel.MaxCost;
+}
+
+<h2 class="mb-4">Услуги</h2>
+
+<div class="mb-3">
+    <a asp-action="Create" class="btn btn-primary">Создать</a>
+</div>
+
+@using (Html.BeginForm("Index", "Services", FormMethod.Get, new { @class = "form-inline mb-3" }))
+{
+    <fieldset class="form-group">
+        <label for="ClientName" class="mr-2">Имя клиента:</label>
+        @Html.TextBox("ClientName", ClientName, new { @class = "form-control mr-2", @id = "ClientName" })
+        <label for="EmployeeName" class="mr-2">Имя сотрудника:</label>
+        @Html.TextBox("EmployeeName", EmployeeName, new { @class = "form-control mr-2", @id = "EmployeeName" })
+        <label for="AdditionalServiceName" class="mr-2">Имя услуги:</label>
+        @Html.TextBox("AdditionalServiceName", AdditionalServiceName, new { @class = "form-control mr-2", @id = "AdditionalServiceName" })
+
+        <!-- New fields for cost range filtering -->
+        <label for="MinCost" class="mr-2">Мин. цена:</label>
+        @Html.TextBox("MinCost", MinCost, new { @class = "form-control mr-2", @id = "MinCost", type = "number", step = "0.01" })
+        <label for="MaxCost" class="mr-2">Макс. цена:</label>
+        @Html.TextBox("MaxCost", MaxCost, new { @class = "form-control mr-2", @id = "MaxCost", type = "number", step = "0.01" })
+    </fieldset>
+    <input type="submit" value="Найти" class="btn btn-outline-success mt-1" />
+}
+
+<table class="table table-striped table-bordered">
+    <thead class="thead-light">
+        <tr>
+            <th style="width: 150px;">
+                <a asp-action="Index" asp-route-sortOrder="@Model.SortViewModel.ClientNameSort" asp-route-ClientName="@ClientName" asp-route-EmployeeName="@EmployeeName" asp-route-AdditionalServiceName="@AdditionalServiceName" asp-route-MinCost="@MinCost" asp-route-MaxCost="@MaxCost" style="color: inherit; text-decoration: none; display: inline-flex; align-items: center;">
+                    @Html.DisplayNameFor(model => model.FilterServicesViewModel.ClientName)
+
+                    @if (Model.SortViewModel.ClientNameSort == SortState.ClientNameAsc)
+                    {
+                        <span class="bi bi-arrow-up" style="margin-left: 5px;"></span>
+                    }
+                    else if (Model.SortViewModel.ClientNameSort == SortState.ClientNameDesc)
+                    {
+                        <span class="bi bi-arrow-down" style="margin-left: 5px;"></span>
+                    }
+                </a>
+            </th>
+
+            <th style="width: 150px;">
+                <a asp-action="Index" asp-route-sortOrder="@Model.SortViewModel.EmployeeNameSort" asp-route-ClientName="@ClientName" asp-route-EmployeeName="@EmployeeName" asp-route-AdditionalServiceName="@AdditionalServiceName" asp-route-MinCost="@MinCost" asp-route-MaxCost="@MaxCost" style="color: inherit; text-decoration: none; display: inline-flex; align-items: center;">
+                    @Html.DisplayNameFor(model => model.FilterServicesViewModel.EmployeeName)
+
+                    @if (Model.SortViewModel.EmployeeNameSort == SortState.EmployeeNameAsc)
+                    {
+                        <span class="bi bi-arrow-up" style="margin-left: 5px;"></span>
+                    }
+                    else if (Model.SortViewModel.EmployeeNameSort == SortState.EmployeeNameDesc)
+                    {
+                        <span class="bi bi-arrow-down" style="margin-left: 5px;"></span>
+                    }
+                </a>
+            </th>
+
+            <th style="width: 150px;">
+                <a asp-action="Index" asp-route-sortOrder="@Model.SortViewModel.AdditionalNameSort" asp-route-ClientName="@ClientName" asp-route-EmployeeName="@EmployeeName" asp-route-AdditionalServiceName="@AdditionalServiceName" asp-route-MinCost="@MinCost" asp-route-MaxCost="@MaxCost" style="color: inherit; text-decoration: none; display: inline-flex; align-items: center;">
+                    @Html.DisplayNameFor(model => model.FilterServicesViewModel.AdditionalServiceName)
+
+                    @if (Model.SortViewModel.AdditionalNameSort == SortState.AdditionalNameAsc)
+                    {
+                        <span class="bi bi-arrow-up" style="margin-left: 5px;"></span>
+                    }
+                    else if (Model.SortViewModel.AdditionalNameSort == SortState.AdditionalNameDesc)
+                    {
+                        <span class="bi bi-arrow-down" style="margin-left: 5px;"></span>
+                    }
+                </a>
+            </th>
+
+            <th style="width: 150px;">
+                @Html.DisplayNameFor(model => model.FilterServicesViewModel.Date)
+            </th>
+
+            <th style="width: 150px;">
+                <a asp-action="Index" asp-route-sortOrder="@Model.SortViewModel.CostSort" asp-route-ClientName="@ClientName" asp-route-EmployeeName="@EmployeeName" asp-route-AdditionalServiceName="@AdditionalServiceName" asp-route-MinCost="@MinCost" asp-route-MaxCost="@MaxCost" style="color: inherit; text-decoration: none; display: inline-flex; align-items: center;">
+                    @Html.DisplayNameFor(model => model.FilterServicesViewModel.Cost)
+
+                    @if (Model.SortViewModel.CostSort == SortState.CostAsc)
+                    {
+                        <span class="bi bi-arrow-up" style="margin-left: 5px;"></span>
+                    }
+                    else if (Model.SortViewModel.CostSort == SortState.CostDesc)
+                    {
+                        <span class="bi bi-arrow-down" style="margin-left: 5px;"></span>
+                    }
+                </a>
+            </th>
+            <th style="width: 150px;" class="text-center">Действие</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Services)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Client.FirstName)</td>
+                <td>@Html.DisplayFor(modelItem => item.Employee.FirstName)</td>
+                <td>@Html.DisplayFor(modelItem => item.AdditionalService.Name)</td>
+                <td>@Html.DisplayFor(modelItem => item.Date)</td>
+                <td>@Html.DisplayFor(modelItem => item.Cost)</td>
+                <td>
+                    <div class="btn-group d-flex" role="group" aria-label="Basic example">
+                        <a asp-action="Edit" asp-route-id="@item.ServiceId" class="btn btn-sm btn-primary me-1">Редактировать</a>
+                        <a asp-action="Details" asp-route-id="@item.ServiceId" class="btn btn-sm btn-secondary me-1">Подробно</a>
+                        <a asp-action="Delete" asp-route-id="@item.ServiceId" class="btn btn-sm btn-danger">Удалить</a>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<page-link page-model="Model.PageViewModel" page-action="Index"
+           page-url-ClientName="@ClientName"
+           page-url-EmployeeName="@EmployeeName"
+           page-url-AdditionalServiceName="@AdditionalServiceName"
+           page-url-MinCost="@MinCost"
+           page-url-MaxCost="@MaxCost"
+           page-url-sortOrder="@(Model.SortViewModel.CurrentState)"></page-link>

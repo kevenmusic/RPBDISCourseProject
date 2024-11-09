@@ -1,0 +1,103 @@
+﻿@model Client
+
+@{
+    ViewData["Title"] = "Редактировать";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="text-center mb-4">Редактировать</h2>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title text-center mb-4">Клиент</h4>
+                    <form enctype="multipart/form-data" asp-action="Edit">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <input type="hidden" asp-for="ClientId">
+                        <div class="form-group">
+                            <label asp-for="FirstName" class="control-label"></label>
+                            <input asp-for="FirstName" class="form-control" />
+                            <span asp-validation-for="FirstName" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="MiddleName" class="control-label"></label>
+                            <input asp-for="MiddleName" class="form-control" />
+                            <span asp-validation-for="MiddleName" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="LastName" class="control-label"></label>
+                            <input asp-for="LastName" class="form-control" />
+                            <span asp-validation-for="LastName" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Gender" class="control-label"></label>
+                            <select asp-for="Gender" class="form-control">
+                                <option value="Мужской">Мужской</option>
+                                <option value="Женский">Женский</option>
+                            </select>
+                            <span asp-validation-for="Gender" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Profession" class="control-label"></label>
+                            <input asp-for="Profession" class="form-control" />
+                            <span asp-validation-for="Profession" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="BirthDate" class="control-label"></label>
+                            <input asp-for="BirthDate" class="form-control" type="date" />
+                            <span asp-validation-for="BirthDate" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="NationalityId" class="control-label"></label>
+                            <select asp-for="NationalityId" class="form-control" asp-items="ViewBag.NationalityId"></select>
+                            <span asp-validation-for="NationalityId" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="ZodiacSignId" class="control-label"></label>
+                            <select asp-for="ZodiacSignId" class="form-control" asp-items="ViewBag.ZodiacSignId"></select>
+                            <span asp-validation-for="ZodiacSignId" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="FrontImage" class="control-label"></label>
+                            <div class="custom-file">
+                                <input asp-for="FrontImage" type="file" class="custom-file-input" id="FLFrontImage" onchange="document.getElementById('FrontImagePrv').src = window.URL.createObjectURL(this.files[0])" />
+                                <label class="custom-file-label" for="FLFrontImage">Выберите файл</label>
+                            </div>
+                            <span asp-validation-for="FrontImage" class="text-danger"></span>
+                            <!-- Превью изображения -->
+                            <td>
+                                <img src="@Url.Content("~/images/" + Model.ClientPhoto)" style="width:75px; height:75px;" />
+                            </td>
+                        </div>
+
+
+                        <div class="form-group text-center mt-4">
+                            <input type="submit" value="Сохранить" class="btn btn-primary" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center mt-3">
+    <a asp-action="Index" class="btn btn-link">Вернуться к списку</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script type="text/javascript">
+        $(".custom-file-input").on("change", function () {
+            var fileName = $(this).val().split("\\").pop();
+            console.log("Файл выбран: " + fileName); // Добавляем лог для отслеживания
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+
+
+    </script>
+}

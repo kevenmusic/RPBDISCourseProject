@@ -1,0 +1,123 @@
+﻿@model Client
+
+@{
+    ViewData["Title"] = "Создать";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="text-center mb-4">Создать</h2>
+
+<div class="container">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h4 class="card-title text-center mb-4">Клиент</h4>
+            <form enctype="multipart/form-data" asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="FirstName" class="control-label"></label>
+                    <input asp-for="FirstName" class="form-control" data-validate="no-numbers-required" required/>
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="MiddleName" class="control-label"></label>
+                    <input asp-for="MiddleName" class="form-control" data-validate="no-numbers-required" required />
+                    <span asp-validation-for="MiddleName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="LastName" class="control-label"></label>
+                    <input asp-for="LastName" class="form-control" data-validate="no-numbers-required" required/>
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Gender" class="control-label"></label>
+                    <select asp-for="Gender" class="form-control">
+                        <option value="Мужской">Мужской</option>
+                        <option value="Женский">Женский</option>
+                    </select>
+                    <span asp-validation-for="Gender" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Profession" class="control-label"></label>
+                    <input asp-for="Profession" class="form-control" data-validate="no-numbers-required" required/>
+                    <span asp-validation-for="Profession" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="BirthDate" class="control-label"></label>
+                    <input asp-for="BirthDate" class="form-control" type="date" data-validate="no-numbers-required" required/>
+                    <span asp-validation-for="BirthDate" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="NationalityId" class="control-label"></label>
+                    <select asp-for="NationalityId" class="form-control" asp-items="ViewBag.NationalityId"></select>
+                    <span asp-validation-for="NationalityId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ZodiacSignId" class="control-label"></label>
+                    <select asp-for="ZodiacSignId" class="form-control" asp-items="ViewBag.ZodiacSignId"></select>
+                    <span asp-validation-for="ZodiacSignId" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="FrontImage" class="control-label">Выберите файл</label>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="FrontImage" onchange="document.getElementById('FrontImagePrv').src = window.URL.createObjectURL(this.files[0])" />
+                        <label class="custom-file-label" for="FrontImage">Выберите файл</label>
+                    </div>
+                    <span asp-validation-for="FrontImage" class="text-danger"></span>
+
+                    <img id="FrontImagePrv" src="" alt="Изображение" width="150" height="150" style="border:1px solid #ddd; margin-top:20px; margin-left:120px;" />
+                </div>
+
+
+                <div class="form-group text-center mt-4">
+                    <input type="submit" value="Создать" class="btn btn-primary" />
+                    <a asp-action="Index" class="btn btn-secondary ml-2">Вернуться к списку</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const textInputs = document.querySelectorAll("input[data-validate='no-numbers-required']");
+
+            textInputs.forEach(input => {
+                input.addEventListener("input", function () {
+                    // Проверка на числа
+                    if (/\d/.test(this.value)) {
+                        this.setCustomValidity("Числа не допускаются.");
+                    } else if (this.value.trim() === "") { // Проверка на пустоту
+                        this.setCustomValidity("Поле не должно быть пустым.");
+                    } else {
+                        this.setCustomValidity("");
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(".custom-file-input").on("change", function () { 
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            // Добавим обработчик на отправку формы
+            const form = document.querySelector('form');
+            form.addEventListener('submit', function (event) {
+                const fileInput = document.getElementById('FrontImage');
+                if (fileInput.files.length === 0) {
+                    event.preventDefault(); // Предотвратить отправку формы
+                    alert("Пожалуйста, выберите файл.");
+                }
+            });
+        });
+
+    </script>
+}
+

@@ -1,0 +1,13 @@
+C:\Users\Konstantin\Desktop\3курс(5сем)\РПБДИС\CourseProject\MarriageAgency\DataLayer\bin\Debug\net8.0\DataLayer.deps.json
+C:\Users\Konstantin\Desktop\3курс(5сем)\РПБДИС\CourseProject\MarriageAgency\DataLayer\bin\Debug\net8.0\DataLayer.dll
+C:\Users\Konstantin\Desktop\3курс(5сем)\РПБДИС\CourseProject\MarriageAgency\DataLayer\bin\Debug\net8.0\DataLayer.pdb
+C:\Users\Konstantin\Desktop\3курс(5сем)\РПБДИС\CourseProject\MarriageAgency\DataLayer\obj\Debug\net8.0\DataLayer.csproj.AssemblyReference.cache
+C:\Users\Konstantin\Desktop\3курс(5сем)\РПБДИС\CourseProject\MarriageAgency\DataLayer\obj\Debug\net8.0\DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Konstantin\Desktop\3курс(5сем)\РПБДИС\CourseProject\MarriageAgency\DataLayer\obj\Debug\net8.0\DataLayer.AssemblyInfoInputs.cache
+C:\Users\Konstantin\Desktop\3курс(5сем)\РПБДИС\CourseProject\MarriageAgency\DataLayer\obj\Debug\net8.0\DataLayer.AssemblyInfo.cs
+C:\Users\Konstantin\Desktop\3курс(5сем)\РПБДИС\CourseProject\MarriageAgency\DataLayer\obj\Debug\net8.0\DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\Konstantin\Desktop\3курс(5сем)\РПБДИС\CourseProject\MarriageAgency\DataLayer\obj\Debug\net8.0\DataLayer.sourcelink.json
+C:\Users\Konstantin\Desktop\3курс(5сем)\РПБДИС\CourseProject\MarriageAgency\DataLayer\obj\Debug\net8.0\DataLayer.dll
+C:\Users\Konstantin\Desktop\3курс(5сем)\РПБДИС\CourseProject\MarriageAgency\DataLayer\obj\Debug\net8.0\refint\DataLayer.dll
+C:\Users\Konstantin\Desktop\3курс(5сем)\РПБДИС\CourseProject\MarriageAgency\DataLayer\obj\Debug\net8.0\DataLayer.pdb
+C:\Users\Konstantin\Desktop\3курс(5сем)\РПБДИС\CourseProject\MarriageAgency\DataLayer\obj\Debug\net8.0\ref\DataLayer.dll

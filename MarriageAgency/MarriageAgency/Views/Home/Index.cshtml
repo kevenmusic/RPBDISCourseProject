@@ -1,8 +1,88 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model MarriageAgency.ViewModels.HomeViewModel
+@{
+    ViewData["Title"] = "Информация о брачном агентстве";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h2>Клиенты</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Код клиента</th>
+            <th>Имя</th>
+            <th>Фамилия</th>
+            <th>Отчество</th>
+            <th>Пол</th>
+            <th>Дата рождения</th>
+            <th>Профессия</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var client in Model.Clients)
+        {
+            <tr>
+                <td>@client.ClientId</td>
+                <td>@client.FirstName</td>
+                <td>@client.LastName</td>
+                <td>@client.MiddleName</td>
+                <td>@client.Gender</td>
+                <td>@client.BirthDate</td>
+                <td>@client.Profession</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h2>Сотрудники</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Код сотрудника</th>
+            <th>Имя</th>
+            <th>Фамилия</th>
+            <th>Отчество</th>
+            <th>Дата рождения</th>
+            <th>Должность</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var employee in Model.Employees)
+        {
+            <tr>
+                <td>@employee.EmployeeId</td>
+                <td>@employee.FirstName</td>
+                <td>@employee.LastName</td>
+                <td>@employee.MiddleName</td>
+                <td>@employee.BirthDate</td>
+                <td>@employee.Position</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h2>Услуги</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Код услуги</th>
+            <th>Доп.Услуга</th>
+            <th>Сотрудник</th>
+            <th>Клиент</th>
+            <th>Дата</th>
+            <th>Стоимость</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var service in Model.Services)
+        {
+            <tr>
+                <td>@service.ServiceId</td>
+                <td>@service.AdditionalServiceName</td>
+                <td>@service.EmployeeName</td>
+                <td>@service.ClientName</td>
+                <td>@service.Date.ToString("dd/MM/yyyy")</td>
+                <td>@service.Cost</td>
+            </tr>
+        }
+    </tbody>
+</table>
