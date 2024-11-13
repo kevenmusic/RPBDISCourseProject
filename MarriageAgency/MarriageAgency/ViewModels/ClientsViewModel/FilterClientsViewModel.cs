@@ -37,5 +37,8 @@ namespace MarriageAgency.ViewModels.ClientsViewModel
 
         [Display(Name = "Знак зодиака")]
         public string ZodiacSignName { get; set; }
+
+        [Display(Name = "Хобби")]
+        public string Hobbies { get; set; }
     }
 }

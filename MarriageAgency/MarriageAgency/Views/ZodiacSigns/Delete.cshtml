@@ -1,0 +1,35 @@
+﻿@model ZodiacSign
+
+@{
+    ViewData["Title"] = "Удалить";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="text-center mb-4">Удаление</h2>
+
+<div class="container">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h4 class="card-title text-center mb-4">Вы уверены, что хотите удалить этот знак зодиака?</h4>
+            <dl class="row">
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Name)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Description)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Description)
+                </dd>
+            </dl>
+            <form asp-action="Delete" class="text-center mt-4">
+                <input type="hidden" asp-for="ZodiacSignId" />
+                <button type="submit" class="btn btn-danger">Удалить</button>
+                <a asp-action="Index" class="btn btn-secondary ml-2">Вернуться к списку</a>
+            </form>
+        </div>
+    </div>
+</div>

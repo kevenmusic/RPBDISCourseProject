@@ -1,0 +1,90 @@
+﻿@model PhysicalAttribute
+
+@{
+    ViewData["Title"] = "Редактировать";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="text-center mb-4">Редактировать</h2>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title text-center mb-4">Физическая характеристика</h4>
+                    <form asp-action="Edit">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <input type="hidden" asp-for="ClientId">
+                        <div class="form-group">
+                            <label asp-for="Age" class="control-label"></label>
+                            <input asp-for="Age" class="form-control">
+                            <span asp-validation-for="Age" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Height" class="control-label"></label>
+                            <input asp-for="Height" class="form-control" type="number" step="0.01" />
+                            <span asp-validation-for="Height" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Weight" class="control-label"></label>
+                            <input asp-for="Weight" class="form-control" type="number" step="0.01" />
+                            <span asp-validation-for="Weight" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="ChildrenCount" class="control-label"></label>
+                            <input asp-for="ChildrenCount" class="form-control">
+                            <span asp-validation-for="ChildrenCount" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="MaritalStatus" class="control-label"></label>
+                            <input asp-for="MaritalStatus" class="form-control" />
+                            <span asp-validation-for="MaritalStatus" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="BadHabits" class="control-label"></label>
+                            <input asp-for="BadHabits" class="form-control" />
+                            <span asp-validation-for="BadHabits" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Hobbies" class="control-label"></label>
+                            <input asp-for="Hobbies" class="form-control"/>
+                            <span asp-validation-for="Hobbies" class="text-danger"></span>
+                        </div>
+                        <div class="form-group text-center mt-4">
+                            <input type="submit" value="Сохранить" class="btn btn-primary" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center mt-3">
+    <a asp-action="Index" class="btn btn-link">Вернуться к списку</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const textInputs = document.querySelectorAll("input[data-validate='no-numbers']");
+
+            textInputs.forEach(input => {
+                input.addEventListener("input", function () {
+                    // Проверка на числа
+                    if (/\d/.test(this.value)) {
+                        this.setCustomValidity("Числа не допускаются.");
+                    } else if (this.value.trim() === "") { // Проверка на пустоту
+                        this.setCustomValidity("Поле не должно быть пустым.");
+                    } else {
+                        this.setCustomValidity("");
+                    }
+                });
+            });
+        });
+    </script>   
+}

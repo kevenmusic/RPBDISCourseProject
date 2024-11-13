@@ -15,8 +15,8 @@ namespace Tests
                     MiddleName = "Иванович",
                     Gender = "Мужской",
                     BirthDate = new DateOnly(1990, 1, 15),
-                    ZodiacSignId = 3, // Example ZodiacSignId
-                    NationalityId = 1, // Example NationalityId
+                    ZodiacSignId = 3,
+                    NationalityId = 1, 
                     Profession = "Инженер",
                     ClientPhoto = "ivan_ivanov.jpg",
                     Contact = new Contact {
@@ -118,9 +118,41 @@ namespace Tests
         {
             return new List<AdditionalService>
             {
-                new AdditionalService { AdditionalServiceId = 1, Name = "VIP Service" },
-                new AdditionalService { AdditionalServiceId = 2, Name = "Early Check-in" },
-                new AdditionalService { AdditionalServiceId = 3, Name = "Услуга3" },
+                new AdditionalService
+                {
+                    AdditionalServiceId = 1,
+                    Name = "VIP Service",
+                    Description = "Полное обслуживание с максимальным комфортом и вниманием к деталям.",
+                    Price = 150.00M,
+                },
+                new AdditionalService
+                {
+                    AdditionalServiceId = 2,
+                    Name = "Early Check-in",
+                    Description = "Возможность заселиться раньше установленного времени заезда.",
+                    Price = 50.00M,
+                },
+                new AdditionalService
+                {
+                    AdditionalServiceId = 3,
+                    Name = "Late Check-out",
+                    Description = "Продление времени выезда из номера до вечера.",
+                    Price = 75.00M,
+                },
+                new AdditionalService
+                {
+                    AdditionalServiceId = 4,
+                    Name = "Spa Package",
+                    Description = "Полный доступ к спа-услугам, включая массаж и бассейн.",
+                    Price = 200.00M,
+                },
+                new AdditionalService
+                {
+                    AdditionalServiceId = 5,
+                    Name = "Guided Tour",
+                    Description = "Экскурсионное обслуживание с гидом по интересным местам.",
+                    Price = 120.00M,
+                }
             };
         }
 
@@ -130,12 +162,6 @@ namespace Tests
             int clients_number = GetFakeClientsList().Count; // Получение списка клиентов
             int employees_number = GetFakeEmployeesList().Count; // Получение списка сотрудников
             int additionalServices_number = GetFakeAdditionalServicesList().Count; // Получение списка дополнительных услуг
-
-            // Проверка на пустоту
-            if (clients_number == 0 || employees_number == 0 || additionalServices_number == 0)
-            {
-                throw new InvalidOperationException("One or more required lists are empty");
-            }
 
             Random randObj = new Random(1); // Создание генератора случайных чисел
             List<Service> services = new List<Service>(); // Список для хранения услуг
@@ -167,13 +193,137 @@ namespace Tests
             var employees = GetFakeEmployeesList();
             var additionalServices = GetFakeAdditionalServicesList();
 
-            Console.WriteLine($"Clients Count: {clients.Count}");
-            Console.WriteLine($"Employees Count: {employees.Count}");
-            Console.WriteLine($"AdditionalServices Count: {additionalServices.Count}");
-
             return services;
         }
 
+        public static List<Nationality> GetFakeNationalitiesList()
+        {
+            return new List<Nationality>
+            {
+                new Nationality
+                {
+                    NationalityId = 1,
+                    Name = "Русский",
+                    Notes = "Примечание 1",
+                },
+                new Nationality
+                {
+                    NationalityId = 2,
+                    Name = "Американец",
+                    Notes = "Примечание 2",
+                },
+                new Nationality
+                {
+                    NationalityId = 3,
+                    Name = "Француз",
+                    Notes = "Примечание 3",
+                }
+            };
+        }
 
+        public static List<ZodiacSign> GetFakeZodiacSignsList()
+        {
+            return new List<ZodiacSign>
+            {
+                new ZodiacSign
+                {
+                    ZodiacSignId = 1,
+                    Name = "Овен",
+                    Description = "Овен — первый знак зодиака, известен своей энергией и страстью.",
+                },
+                new ZodiacSign
+                {
+                    ZodiacSignId = 2,
+                    Name = "Телец",
+                    Description = "Телец — символ упорства, спокойствия и стойкости.",
+                },
+                new ZodiacSign
+                {
+                    ZodiacSignId = 3,
+                    Name = "Близнецы",
+                    Description = "Близнецы — коммуникабельные и энергичные личности.",
+                },
+                new ZodiacSign
+                {
+                    ZodiacSignId = 4,
+                    Name = "Рак",
+                    Description = "Рак — чувствительный знак, обладающий глубокой интуицией.",
+                },
+            };
+        }
+
+        public static List<Contact> GetFakeContactsList()
+        {
+            return new List<Contact>
+            {
+                new Contact
+                {
+                    ClientId = 1,
+                    Address = "ул. Ленина, д. 10",
+                    Phone = "+7 123 456 7890",
+                    PassportData = "1234 567890",
+                    Client = GetFakeClientsList().SingleOrDefault(c => c.ClientId == 1)
+                },
+                new Contact
+                {
+                    ClientId = 2,
+                    Address = "ул. Пушкина, д. 20",
+                    Phone = "+7 987 654 3210",
+                    PassportData = "2233 445566",
+                    Client = GetFakeClientsList().SingleOrDefault(c => c.ClientId == 2)
+                },
+                new Contact
+                {
+                    ClientId = 3,
+                    Address = "ул. Гагарина, д. 5",
+                    Phone = "+7 111 222 3333",
+                    PassportData = "3344 556677",
+                    Client = GetFakeClientsList().SingleOrDefault(c => c.ClientId == 3)
+                }
+            };
+        }
+
+        public static List<PhysicalAttribute> GetFakePhysicalAttributesList()
+        {
+            return new List<PhysicalAttribute>
+            {
+                new PhysicalAttribute
+                {
+                    ClientId = 1,
+                    Age = 34,
+                    Height = 180.5M,
+                    Weight = 75.0M,
+                    ChildrenCount = 2,
+                    MaritalStatus = "Женат",
+                    BadHabits = "Курение",
+                    Hobbies = "Футбол, рыбалка",
+                    Client = GetFakeClientsList().SingleOrDefault(c => c.ClientId == 1)
+                },
+                new PhysicalAttribute
+                {
+                    ClientId = 2,
+                    Age = 29,
+                    Height = 165.2M,
+                    Weight = 60.0M,
+                    ChildrenCount = 1,
+                    MaritalStatus = "Замужем",
+                    BadHabits = "Нет",
+                    Hobbies = "Чтение, путешествия",
+                    Client = GetFakeClientsList().SingleOrDefault(c => c.ClientId == 2)
+                },
+                new PhysicalAttribute
+                {
+                    ClientId = 3,
+                    Age = 37,
+                    Height = 175.0M,
+                    Weight = 80.0M,
+                    ChildrenCount = 0,
+                    MaritalStatus = "Холост",
+                    BadHabits = "Алкоголь",
+                    Hobbies = "Велоспорт, игры на гитаре",
+                    Client = GetFakeClientsList().SingleOrDefault(c => c.ClientId == 3)
+                }
+            };
+        }
     }
 }

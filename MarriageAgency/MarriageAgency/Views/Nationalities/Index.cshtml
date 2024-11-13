@@ -1,0 +1,70 @@
+﻿@using MarriageAgency.ViewModels.NationalitiesViewModel;
+@model NationalitiesViewModel;
+
+@{
+    ViewData["Title"] = "Национальности";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    string NationalityName = Model.FilterNationalitiesViewModel.NationalityName;
+}
+
+<h2 class="mb-4">Национальности</h2>
+
+<div class="mb-3">
+    <a asp-action="Create" class="btn btn-primary">Создать</a>
+</div>
+
+@using (Html.BeginForm("Index", "Nationalities", FormMethod.Get, new { @class = "form-inline mb-3" }))
+{
+    <fieldset class="form-group">
+        <label for="NationalityName" class="mr-2">Национальность:</label>
+        @Html.DropDownList("NationalityName", (SelectList)ViewData["Name"], "Выберите национальность", new { @class = "form-control mr-2", @id = "NationalityId" })
+    </fieldset>
+
+    <input type="submit" value="Найти" class="btn btn-outline-success mt-1" />
+}
+
+<table class="table table-striped table-bordered">
+    <thead class="thead-light">
+        <tr>
+            <th style="width: 150px;">
+                @Html.DisplayNameFor(model => model.FilterNationalitiesViewModel.NationalityName)
+                <a asp-action="Index" asp-route-sortOrder="@Model.SortViewModel.NationalityNameSort" asp-route-NationalityName="@NationalityName"
+                   style="color: inherit; text-decoration: none; display: inline-flex; align-items: center;">
+                    @if (Model.SortViewModel.NationalityNameSort == SortState.NationalityNameAsc)
+                    {
+                        <span class="bi bi-arrow-up" style="margin-left: 5px;"></span>
+                    }
+                    else if (Model.SortViewModel.NationalityNameSort == SortState.NationalityNameDesc)
+                    {
+                        <span class="bi bi-arrow-down" style="margin-left: 5px;"></span>
+                    }
+                </a>
+            </th>
+            <th style="width: 150px;">
+                @Html.DisplayNameFor(model => model.FilterNationalitiesViewModel.Notes)
+            </th>
+          
+            <th style="width: 150px;" class="text-center">Действие</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Nationalities)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                <td>@Html.DisplayFor(modelItem => item.Notes)</td>
+                <td>
+                    <div class="btn-group d-flex" role="group" aria-label="Basic example">
+                        <a asp-action="Edit" asp-route-id="@item.NationalityId" class="btn btn-sm btn-primary me-1">Редактировать</a>
+                        <a asp-action="Details" asp-route-id="@item.NationalityId" class="btn btn-sm btn-secondary me-1">Подробно</a>
+                        <a asp-action="Delete" asp-route-id="@item.NationalityId" class="btn btn-sm btn-danger">Удалить</a>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<page-link page-model="Model.PageViewModel" page-action="Index"
+           page-url-sortOrder="@(Model.SortViewModel.CurrentState)"
+           page-url-NationalityName="@NationalityName"></page-link>

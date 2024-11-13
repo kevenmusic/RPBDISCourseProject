@@ -2,6 +2,7 @@ using MarriageAgency.DataLayer.Data;
 using MarriageAgency.DataLayer.Models;
 using MarriageAgency.ViewModels;
 using MarriageAgency.ViewModels.ServicesViewModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MarriageAgency.Controllers

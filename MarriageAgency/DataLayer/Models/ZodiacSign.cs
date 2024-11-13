@@ -8,6 +8,8 @@ namespace MarriageAgency.DataLayer.Models
         public int ZodiacSignId { get; set; }
 
         [Display(Name = "Название знака")]
+        [Required(ErrorMessage = "Поле Фамилия клиента обязательно для заполнения.")]
+        [RegularExpression(@"^[^\d]*$", ErrorMessage = "Числа не допускаются.")]
         public string Name { get; set; } = null!;
 
         [Display(Name = "Описание")]

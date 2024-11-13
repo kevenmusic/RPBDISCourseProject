@@ -1,0 +1,59 @@
+﻿@model PhysicalAttribute
+
+@{
+    ViewData["Title"] = "Подробно";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="text-center mb-4">Детально</h2>
+
+<div class="container">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h4 class="card-title text-center mb-4">Физическая характеристика</h4>
+            <dl class="row">
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Age)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Age)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Height)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Height)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Weight)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Weight)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.ChildrenCount)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.ChildrenCount)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.MaritalStatus)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.MaritalStatus)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Hobbies)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Hobbies)
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+<div class="text-center mt-3">
+    <a asp-action="Edit" asp-route-id="@Model.ClientId" class="btn btn-primary mx-2">Редактировать</a>
+    <a asp-action="Index" class="btn btn-secondary mx-2">Вернуться к списку</a>
+</div>

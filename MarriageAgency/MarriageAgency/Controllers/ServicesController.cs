@@ -4,6 +4,7 @@ using MarriageAgency.Infrastructure;
 using MarriageAgency.Infrastructure.Filters;
 using MarriageAgency.ViewModels;
 using MarriageAgency.ViewModels.ServicesViewModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -25,22 +26,21 @@ namespace MarriageAgency.Controllers
         }
 
         // GET: Services
-        [SetToSession("Service")] //Фильтр действий для сохранение в сессию параметров отбора
+        [SetToSession("Service")]
+        [Authorize]
         [ResponseCache(Location = ResponseCacheLocation.Any, Duration = 264)]
         public async Task<IActionResult> Index(FilterServicesViewModel service, SortState sortOrder = SortState.No, int page = 1)
         {
-            if (service.ClientName == null && service.EmployeeName == null && service.AdditionalServiceName == null)
+            if (service.ClientName == null && service.EmployeeName == null 
+                && service.AdditionalServiceName == null && service.MinCost == null  && service.MaxCost == null)
             {
                 // Считывание данных из сессии
                 if (HttpContext != null)
                 {
                     // Считывание данных из сессии
                     var sessionService = Infrastructure.SessionExtensions.Get(HttpContext.Session, "Service");
-                    var sessionSortState = Infrastructure.SessionExtensions.Get(HttpContext.Session, "SortState");
                     if (sessionService != null)
                         service = Transformations.DictionaryToObject<FilterServicesViewModel>(sessionService);
-                    if (sessionSortState != null && sessionSortState.Count > 0 && sortOrder == SortState.No)
-                        sortOrder = (SortState)Enum.Parse(typeof(SortState), sessionSortState["sortOrder"]);
                 }
             }
 
@@ -59,7 +59,7 @@ namespace MarriageAgency.Controllers
 
             // Получение данных асинхронно
             var servicesList = await marriageAgencyContext.ToListAsync();
-
+            ViewData["Name"] = new SelectList(_context.AdditionalServices, "Name", "Name");
             // Формирование модели для передачи представлению
             ServicesViewModel services = new()
             {
@@ -94,6 +94,7 @@ namespace MarriageAgency.Controllers
         }
 
         // GET: Services/Create
+        [Authorize(Roles = "admin")]
         public IActionResult Create()
         {
             ViewData["ClientId"] = new SelectList(_context.Clients, "ClientId", "FirstName");
@@ -106,6 +107,7 @@ namespace MarriageAgency.Controllers
         // POST: Services/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Create([Bind("ServiceId,AdditionalServiceId, EmployeeId, ClientId, Date, Cost")] Service service)
         {
 
@@ -124,6 +126,7 @@ namespace MarriageAgency.Controllers
         }
 
         // GET: Services/Edit/5
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Edit(int id)
         {
             if (id == null)
@@ -146,6 +149,7 @@ namespace MarriageAgency.Controllers
         // POST: Services/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Edit(int id, [Bind("ServiceId,AdditionalServiceId,ClientId,EmployeeId,Date,Cost")] Service service)
         {
             if (id != service.ServiceId)
@@ -181,6 +185,7 @@ namespace MarriageAgency.Controllers
         }
 
         // GET: Services/Delete/5
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -203,6 +208,7 @@ namespace MarriageAgency.Controllers
 
         // POST: Services/Delete/5
         [HttpPost, ActionName("Delete")]
+        [Authorize(Roles = "admin")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
@@ -256,21 +262,13 @@ namespace MarriageAgency.Controllers
             }
 
             services = services.Include(o => o.Client)
-                               .Include(o => o.Employee)
-                               .Include(o => o.AdditionalService)
-                               .Where(o => o.Client.FirstName.Contains(searchClientName ?? "")
-                                       && o.Employee.FirstName.Contains(searchEmployeeName ?? "")
-                                       && o.AdditionalService.Name.Contains(additionalServiceName ?? ""));
-
-            if (minCost.HasValue)
-            {
-                services = services.Where(s => s.Cost >= minCost.Value);
-            }
-
-            if (maxCost.HasValue)
-            {
-                services = services.Where(s => s.Cost <= maxCost.Value);
-            }
+                   .Include(o => o.Employee)
+                   .Include(o => o.AdditionalService)
+                   .Where(o => (string.IsNullOrEmpty(searchClientName) || o.Client.FirstName.Contains(searchClientName))
+                           && (string.IsNullOrEmpty(searchEmployeeName) || o.Employee.FirstName.Contains(searchEmployeeName))
+                           && (!minCost.HasValue || o.Cost >= minCost.Value)
+                           && (!maxCost.HasValue || o.Cost <= maxCost.Value)
+                           && (string.IsNullOrEmpty(additionalServiceName) || o.AdditionalService.Name.Contains(additionalServiceName)));
 
             return services;
         }

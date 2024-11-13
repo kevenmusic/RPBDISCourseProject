@@ -4,6 +4,7 @@ using MarriageAgency.Infrastructure;
 using MarriageAgency.Infrastructure.Filters;
 using MarriageAgency.ViewModels;
 using MarriageAgency.ViewModels.ClientsViewModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -26,14 +27,14 @@ public class ClientsController : Controller
     // GET: Clients
     [ResponseCache(Location = ResponseCacheLocation.Any, Duration = 264)]
     [SetToSession("Client")]
+    [Authorize]
     public async Task<IActionResult> Index(FilterClientsViewModel client, SortState sortOrder = SortState.No, int page = 1)
     {
-        if (client.ClientName == null)
+        if (client.ClientName == null && client.Gender == null && client.NationalityName == null
+            && client.ZodiacSignName == null && client.Age == null && client.Hobbies == null)
         {
-            // Считывание данных из сессии
             if (HttpContext != null)
             {
-                // Считывание данных из сессии
                 var sessionClient = MarriageAgency.Infrastructure.SessionExtensions.Get(HttpContext.Session, "Client");
 
                 if (sessionClient != null)
@@ -48,14 +49,18 @@ public class ClientsController : Controller
             .Include(c => c.PhysicalAttribute) // Загружаем связанные записи PhysicalAttribute
             .Include(c => c.ZodiacSign); // Загружаем связанные записи ZodiacSign
 
-        marriageAgencyContext = Sort_Search(marriageAgencyContext, sortOrder, client.ClientName ?? "");
+        marriageAgencyContext = Sort_Search(marriageAgencyContext, sortOrder, client.ClientName ?? "", 
+            client.Gender ?? "", client.NationalityName ?? "", client.ZodiacSignName ?? "", 
+            client.Age, client.Hobbies ?? "");
 
         // Разбиение на страницы
         var count = await marriageAgencyContext.CountAsync();
         marriageAgencyContext = marriageAgencyContext.Skip((page - 1) * pageSize).Take(pageSize);
 
-        // Асинхронно извлекаем данные
         var clientsList = await marriageAgencyContext.ToListAsync();
+
+        ViewData["Name"] = new SelectList(_context.Nationalities, "Name", "Name");
+        ViewData["ZodiacSignName"] = new SelectList(_context.ZodiacSigns, "Name", "Name");
 
         // Формирование модели для передачи представлению
         ClientsViewModel clients = new()
@@ -69,7 +74,6 @@ public class ClientsController : Controller
         return View(clients);
     }
 
-
     // GET: Clients/Details/5
     public async Task<IActionResult> Details(int? id)
     {
@@ -82,7 +86,7 @@ public class ClientsController : Controller
             .Include(c => c.Contact) // Загружаем связанные записи Contact
             .Include(c => c.Nationality) // Загружаем связанные записи Nationality
             .Include(c => c.PhysicalAttribute) // Загружаем связанные записи PhysicalAttribute
-            .Include(c => c.ZodiacSign) // Загружаем связанные записи ZodiacSign// Загружаем связанные записи ZodiacSign
+            .Include(c => c.ZodiacSign) // Загружаем связанные записи ZodiacSign
             .SingleOrDefaultAsync(m => m.ClientId == id);
 
         if (client == null)
@@ -95,6 +99,7 @@ public class ClientsController : Controller
     }
 
     // GET: Clients/Create
+    [Authorize(Roles = "admin")]
     public IActionResult Create()
     {
         var nationality = _context.Nationalities;
@@ -107,6 +112,7 @@ public class ClientsController : Controller
     // POST: Clients/Create
     [HttpPost]
     [ValidateAntiForgeryToken]
+    [Authorize(Roles = "admin")]
     public async Task<IActionResult> Create(Client client)
     {
         if (!ModelState.IsValid)
@@ -125,6 +131,7 @@ public class ClientsController : Controller
     }
 
     // GET: Clients/Edit/5
+    [Authorize(Roles = "admin")]
     public async Task<IActionResult> Edit(int? id)
     {
         if (id == null)
@@ -148,6 +155,7 @@ public class ClientsController : Controller
 
     [HttpPost]
     [ValidateAntiForgeryToken]
+    [Authorize(Roles = "admin")]
     public async Task<IActionResult> Edit(int id, [Bind("ClientId,FirstName,LastName,MiddleName,Gender,BirthDate,ZodiacSignId,NationalityId,Profession,FrontImage,ClientPhoto")] Client client)
     {
         if (id != client.ClientId)
@@ -202,6 +210,7 @@ public class ClientsController : Controller
     }
 
     // GET: Clients/Delete/5
+    [Authorize(Roles = "admin")]
     public async Task<IActionResult> Delete(int? id)
     {
         if (id == null)
@@ -210,7 +219,7 @@ public class ClientsController : Controller
         }
 
         var client = await _context.Clients
-             .Include(c => c.Contact) // Загружаем связанные записи Contact
+            .Include(c => c.Contact) // Загружаем связанные записи Contact
             .Include(c => c.Nationality) // Загружаем связанные записи Nationality
             .Include(c => c.PhysicalAttribute) // Загружаем связанные записи PhysicalAttribute
             .Include(c => c.ZodiacSign) // Загружаем связанные записи ZodiacSign
@@ -226,14 +235,48 @@ public class ClientsController : Controller
     // POST: Clients/Delete/5
     [HttpPost, ActionName("Delete")]
     [ValidateAntiForgeryToken]
+    [Authorize(Roles = "admin")]
     public async Task<IActionResult> DeleteConfirmed(int id)
     {
+        // Находим клиента вместе с связанными сущностями
         var client = await _context.Clients
+            .Include(c => c.Contact) // Загружаем связанные записи Contact
+            .Include(c => c.Nationality) // Загружаем связанные записи Nationality
+            .Include(c => c.PhysicalAttribute) // Загружаем связанные записи PhysicalAttribute
+            .Include(c => c.ZodiacSign) // Загружаем связанные записи ZodiacSign
             .SingleOrDefaultAsync(m => m.ClientId == id);
-        _context.Clients.Remove(client);
-        await _context.SaveChangesAsync();
+
+        if (client != null)
+        {
+            // Удаляем связанные сущности, если они существуют
+            if (client.Contact != null)
+            {
+                _context.Contacts.Remove(client.Contact); // Удаляем запись Contact
+            }
+            if (client.PhysicalAttribute != null)
+            {
+                _context.PhysicalAttributes.Remove(client.PhysicalAttribute); // Удаляем запись PhysicalAttribute
+            }
+            if (client.Nationality != null)
+            {
+                _context.Nationalities.Remove(client.Nationality); // Удаляем запись Nationality
+            }
+            if (client.ZodiacSign != null)
+            {
+                _context.ZodiacSigns.Remove(client.ZodiacSign); // Удаляем запись ZodiacSign
+            }
+
+            // Удаляем запись клиента
+            _context.Clients.Remove(client);
+
+            // Сохраняем изменения в базе данных
+            await _context.SaveChangesAsync();
+        }
+
+        // Перенаправляем на страницу со списком клиентов
         return RedirectToAction(nameof(Index));
     }
+
 
     private bool ClientExists(int id)
     {
@@ -256,9 +299,35 @@ public class ClientsController : Controller
         return uniqueFileName;
     }
 
-
-    private static IQueryable<Client> Sort_Search(IQueryable<Client> clients, SortState sortOrder, string ClientName)
+    private static IQueryable<Client> Sort_Search(IQueryable<Client> clients, SortState sortOrder, string ClientName, string Gender, string NationalityName, string ZodiacSignName, int? Age, string Hobbies)
     {
+        clients = clients.Where(o => o.FirstName.Contains(ClientName ?? ""));
+
+        if (!string.IsNullOrEmpty(Gender))
+        {
+            clients = clients.Where(o => o.Gender.Contains(Gender ?? ""));
+        }
+
+        if (!string.IsNullOrEmpty(NationalityName))
+        {
+            clients = clients.Where(o => o.Nationality.Name.Contains(NationalityName ?? ""));
+        }
+
+        if (!string.IsNullOrEmpty(ZodiacSignName))
+        {
+            clients = clients.Where(o => o.ZodiacSign.Name.Contains(ZodiacSignName ?? ""));
+        }
+
+        if (Age.HasValue)
+        {
+            clients = clients.Where(o => o.PhysicalAttribute.Age == Age.Value);
+        }
+
+        if (!string.IsNullOrEmpty(Hobbies))
+        {
+            clients = clients.Where(o => o.PhysicalAttribute.Hobbies.Contains(Hobbies ?? ""));
+        }
+
         switch (sortOrder)
         {
             case SortState.ClientNameAsc:
@@ -267,8 +336,46 @@ public class ClientsController : Controller
             case SortState.ClientNameDesc:
                 clients = clients.OrderByDescending(s => s.FirstName);
                 break;
+
+            case SortState.GenderAsc:
+                clients = clients.OrderBy(s => s.Gender);
+                break;
+            case SortState.GenderDesc:
+                clients = clients.OrderByDescending(s => s.Gender);
+                break;
+
+            case SortState.NationalityAsc:
+                clients = clients.OrderBy(s => s.Nationality.Name);
+                break;
+            case SortState.NationalityDesc:
+                clients = clients.OrderByDescending(s => s.Nationality.Name);
+                break;
+
+            case SortState.ZodiacSignNameAsc:
+                clients = clients.OrderBy(s => s.ZodiacSign.Name);
+                break;
+            case SortState.ZodiacSignNameDesc:
+                clients = clients.OrderByDescending(s => s.ZodiacSign.Name);
+                break;
+
+            case SortState.AgeAsc:
+                clients = clients.OrderBy(s => s.PhysicalAttribute.Age);
+                break;
+            case SortState.AgeDesc:
+                clients = clients.OrderByDescending(s => s.PhysicalAttribute.Age);
+                break;
+
+            case SortState.HobbiesAsc:
+                clients = clients.OrderBy(s => s.PhysicalAttribute.Hobbies);
+                break;
+            case SortState.HobbiesDesc:
+                clients = clients.OrderByDescending(s => s.PhysicalAttribute.Hobbies);
+                break;
+
+            default:
+                break;
         }
-        clients = clients.Where(o => o.FirstName.Contains(ClientName ?? ""));
+
         return clients;
     }
 }

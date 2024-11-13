@@ -8,10 +8,10 @@ namespace MarriageAgency.ViewModels.EmployeesViewModel
         public string EmployeeName { get; set; } = null!;
 
         [Display(Name = "Фамилия")]
-        public string LastName { get; set; } = null!;
+        public string EmployeeLastName { get; set; } = null!;
 
         [Display(Name = "Отчество")]
-        public string MiddleName { get; set; } = null!;
+        public string EmployeeMiddleName { get; set; } = null!;
 
         [Display(Name = "Должность")]
         public string? Position { get; set; }

@@ -4,6 +4,7 @@ using MarriageAgency.Infrastructure;
 using MarriageAgency.Infrastructure.Filters;
 using MarriageAgency.ViewModels;
 using MarriageAgency.ViewModels.EmployeesViewModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -23,36 +24,39 @@ namespace MarriageAgency.Controllers
             }
         }
 
-        // GET: Tanks
+        // GET: Employee
         [SetToSession("Employee")]
+        [Authorize]
         [ResponseCache(Location = ResponseCacheLocation.Any, Duration = 264)]
-        public async Task<IActionResult> Index(FilterEmployeesViewModel employee, SortState sortOrder = SortState.No, int page = 1)
+        public async Task<IActionResult> Index(FilterEmployeesViewModel employee, SortState sortOrder = SortState.No, int page = 1, DateOnly? birthDate = null)
         {
-            if (employee.EmployeeName == null)
+            if (employee.EmployeeName == null && employee.EmployeeMiddleName == null 
+                && employee.EmployeeLastName == null
+                 && employee.BirthDate == null)
             {
-                // Считывание данных из сессии
                 if (HttpContext != null)
                 {
-                    // Считывание данных из сессии
                     var sessionEmployee = Infrastructure.SessionExtensions.Get(HttpContext.Session, "Employee");
-
                     if (sessionEmployee != null)
+                    {
                         employee = Transformations.DictionaryToObject<FilterEmployeesViewModel>(sessionEmployee);
+                    }
                 }
             }
 
-            // Фильтрация данных
             IQueryable<Employee> marriageAgencyContext = _context.Employees;
-            marriageAgencyContext = Sort_Search(marriageAgencyContext, sortOrder, employee.EmployeeName ?? "");
 
-            // Разбиение на страницы
-            var count = await marriageAgencyContext.CountAsync(); // Асинхронный подсчет
+            marriageAgencyContext = Sort_Search(marriageAgencyContext, sortOrder, employee.EmployeeName ?? "", 
+                employee.EmployeeLastName ?? "",
+                employee.EmployeeMiddleName ?? "",
+                employee.BirthDate);
+
+            var count = await marriageAgencyContext.CountAsync();
             marriageAgencyContext = marriageAgencyContext.Skip((page - 1) * pageSize).Take(pageSize);
 
-            // Формирование модели для передачи представлению
             EmployeesViewModel employees = new()
             {
-                Employees = await marriageAgencyContext.ToListAsync(), // Асинхронная загрузка данных
+                Employees = await marriageAgencyContext.ToListAsync(),
                 PageViewModel = new PageViewModel(count, page, pageSize),
                 SortViewModel = new SortViewModel(sortOrder),
                 FilterEmployeesViewModel = employee,
@@ -69,17 +73,18 @@ namespace MarriageAgency.Controllers
                 return NotFound();
             }
 
-            var tank = await _context.Employees
+            var employee = await _context.Employees
                 .SingleOrDefaultAsync(m => m.EmployeeId == id);
-            if (tank == null)
+            if (employee == null)
             {
                 return NotFound();
             }
 
-            return View(tank);
+            return View(employee);
         }
 
         // GET: Employees/Create
+        [Authorize(Roles = "admin")]
         public IActionResult Create()
         {
             return View();
@@ -88,6 +93,7 @@ namespace MarriageAgency.Controllers
         // POST: Employees/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Create([Bind("EmployeeId, FirstName, MiddleName, LastName, Position, BirthDate")] Employee employee)
         {
             if (!ModelState.IsValid)
@@ -105,6 +111,7 @@ namespace MarriageAgency.Controllers
         }
 
         // GET: Employees/Edit/5
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -112,17 +119,18 @@ namespace MarriageAgency.Controllers
                 return NotFound();
             }
 
-            var tank = await _context.Employees.SingleOrDefaultAsync(m => m.EmployeeId == id);
-            if (tank == null)
+            var employee = await _context.Employees.SingleOrDefaultAsync(m => m.EmployeeId == id);
+            if (employee == null)
             {
                 return NotFound();
             }
-            return View(tank);
+            return View(employee);
         }
 
         // POST: Employees/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Edit(int id, [Bind("EmployeeId, FirstName, MiddleName, LastName, Position, BirthDate")] Employee employee)
         {
             if (id != employee.EmployeeId)
@@ -143,7 +151,7 @@ namespace MarriageAgency.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!TankExists(employee.EmployeeId))
+                    if (!EmployeeExists(employee.EmployeeId))
                     {
                         return NotFound();
                     }
@@ -157,6 +165,7 @@ namespace MarriageAgency.Controllers
         }
 
         // GET: Employees/Delete/5
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -164,34 +173,55 @@ namespace MarriageAgency.Controllers
                 return NotFound();
             }
 
-            var tank = await _context.Employees
+            var employee = await _context.Employees
                 .SingleOrDefaultAsync(m => m.EmployeeId == id);
-            if (tank == null)
+            if (employee == null)
             {
                 return NotFound();
             }
 
-            return View(tank);
+            return View(employee);
         }
 
         // POST: Employees/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var tank = await _context.Employees.SingleOrDefaultAsync(m => m.EmployeeId == id);
-            _context.Employees.Remove(tank);
+            var employee = await _context.Employees.SingleOrDefaultAsync(m => m.EmployeeId == id);
+            _context.Employees.Remove(employee);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool TankExists(int id)
+        private bool EmployeeExists(int id)
         {
             return _context.Employees.Any(e => e.EmployeeId == id);
         }
 
-        private static IQueryable<Employee> Sort_Search(IQueryable<Employee> employees, SortState sortOrder, string EmployeeName)
+        private static IQueryable<Employee> Sort_Search(IQueryable<Employee> employees, SortState sortOrder, string employeeName, string employeeLastName, string employeeMiddleName, DateOnly? birthDate)
         {
+            if (!string.IsNullOrEmpty(employeeName))
+            {
+                employees = employees.Where(e => e.FirstName.Contains(employeeName));
+            }
+
+            if (!string.IsNullOrEmpty(employeeLastName))
+            {
+                employees = employees.Where(e => e.LastName.Contains(employeeLastName));
+            }
+
+            if (!string.IsNullOrEmpty(employeeMiddleName))
+            {
+                employees = employees.Where(e => e.MiddleName.Contains(employeeMiddleName));
+            }
+
+            if (birthDate.HasValue)
+            {
+                employees = employees.Where(e => e.BirthDate == birthDate.Value);
+            }
+
             switch (sortOrder)
             {
                 case SortState.EmployeeNameAsc:
@@ -200,8 +230,28 @@ namespace MarriageAgency.Controllers
                 case SortState.EmployeeNameDesc:
                     employees = employees.OrderByDescending(s => s.FirstName);
                     break;
+                case SortState.EmployeeLastNameAsc:
+                    employees = employees.OrderBy(s => s.LastName);
+                    break;
+                case SortState.EmployeeLastNameDesc:
+                    employees = employees.OrderByDescending(s => s.LastName); 
+                    break;
+                case SortState.EmployeeMiddleNameAsc:
+                    employees = employees.OrderBy(s => s.MiddleName); 
+                    break;
+                case SortState.EmployeeMiddleNameDesc:
+                    employees = employees.OrderByDescending(s => s.MiddleName);
+                    break;
+                case SortState.BirthDateAsc:
+                    employees = employees.OrderBy(s => s.BirthDate);
+                    break;
+                case SortState.BirthDateDesc:
+                    employees = employees.OrderByDescending(s => s.BirthDate);
+                    break;
+                default:
+                    break;
             }
-            employees = employees.Where(o => o.FirstName.Contains(EmployeeName ?? ""));
+
             return employees;
         }
     }

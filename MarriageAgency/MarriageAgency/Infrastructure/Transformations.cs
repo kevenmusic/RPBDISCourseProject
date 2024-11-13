@@ -5,7 +5,7 @@ using System.Reflection;
 
 namespace MarriageAgency.Infrastructure
 {
-    //Преобразование словаря в объект
+    // Transformation of a dictionary to an object
     public static class Transformations
     {
         public static T DictionaryToObject<T>(IDictionary<string, string> dict) where T : new()
@@ -36,10 +36,27 @@ namespace MarriageAgency.Infrastructure
                     continue;
                 }
 
-                // Fix nullables and convert the value
+                // Handle DateOnly explicitly
                 Type targetType = Nullable.GetUnderlyingType(tPropertyType) ?? tPropertyType;
+                object newValue = null;
 
-                object newValue = Convert.ChangeType(item.Value, targetType);
+                try
+                {
+                    if (targetType == typeof(DateOnly))
+                    {
+                        newValue = DateOnly.Parse(item.Value); // Parse the string to DateOnly
+                    }
+                    else
+                    {
+                        newValue = Convert.ChangeType(item.Value, targetType);
+                    }
+                }
+                catch (FormatException)
+                {
+                    // Handle invalid date format or conversion error
+                    newValue = null;
+                }
+
                 property.SetValue(t, newValue);
             }
             return t;

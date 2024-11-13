@@ -1,0 +1,70 @@
+﻿@using MarriageAgency.ViewModels.ZodiacSignsViewModel;
+@model ZodiacSignsViewModel;
+
+@{
+    ViewData["Title"] = "Национальности";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    string ZodiacSignName = Model.FilterZodiacSignsViewModel.ZodiacSignName;
+}
+
+<h2 class="mb-4">Знаки зодиака</h2>
+
+<div class="mb-3">
+    <a asp-action="Create" class="btn btn-primary">Создать</a>
+</div>
+
+@using (Html.BeginForm("Index", "ZodiacSigns", FormMethod.Get, new { @class = "form-inline mb-3" }))
+{
+    <fieldset class="form-group">
+        <label for="ZodiacSignName" class="mr-2">Национальность:</label>
+        @Html.DropDownList("ZodiacSignName", (SelectList)ViewData["Name"], "Выберите знак зодиака", new { @class = "form-control mr-2", @id = "ZodiacSignId" })
+    </fieldset>
+
+    <input type="submit" value="Найти" class="btn btn-outline-success mt-1" />
+}
+
+<table class="table table-striped table-bordered">
+    <thead class="thead-light">
+        <tr>
+            <th style="width: 150px;">
+                @Html.DisplayNameFor(model => model.FilterZodiacSignsViewModel.ZodiacSignName)
+                <a asp-action="Index" asp-route-sortOrder="@Model.SortViewModel.ZodiacSignNameSort" asp-route-ZodiacSignName="@ZodiacSignName"
+                   style="color: inherit; text-decoration: none; display: inline-flex; align-items: center;">
+                    @if (Model.SortViewModel.ZodiacSignNameSort == SortState.ZodiacSignNameAsc)
+                    {
+                        <span class="bi bi-arrow-up" style="margin-left: 5px;"></span>
+                    }
+                    else if (Model.SortViewModel.ZodiacSignNameSort == SortState.ZodiacSignNameDesc)
+                    {
+                        <span class="bi bi-arrow-down" style="margin-left: 5px;"></span>
+                    }
+                </a>
+            </th>
+            <th style="width: 150px;">
+                @Html.DisplayNameFor(model => model.FilterZodiacSignsViewModel.Description)
+            </th>
+          
+            <th style="width: 150px;" class="text-center">Действие</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ZodiacSigns)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                <td>@Html.DisplayFor(modelItem => item.Description)</td>
+                <td>
+                    <div class="btn-group d-flex" role="group" aria-label="Basic example">
+                        <a asp-action="Edit" asp-route-id="@item.ZodiacSignId" class="btn btn-sm btn-primary me-1">Редактировать</a>
+                        <a asp-action="Details" asp-route-id="@item.ZodiacSignId" class="btn btn-sm btn-secondary me-1">Подробно</a>
+                        <a asp-action="Delete" asp-route-id="@item.ZodiacSignId" class="btn btn-sm btn-danger">Удалить</a>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<page-link page-model="Model.PageViewModel" page-action="Index"
+           page-url-sortOrder="@(Model.SortViewModel.CurrentState)"
+           page-url-ZodiacSignName="@ZodiacSignName"></page-link>

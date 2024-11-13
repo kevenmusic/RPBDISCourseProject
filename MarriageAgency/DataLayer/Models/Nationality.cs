@@ -9,6 +9,8 @@ namespace MarriageAgency.DataLayer.Models
         public int NationalityId { get; set; }
 
         [Display(Name = "Название национальности")]
+        [Required(ErrorMessage = "Поле Фамилия клиента обязательно для заполнения.")]
+        [RegularExpression(@"^[^\d]*$", ErrorMessage = "Числа не допускаются.")]
         public string Name { get; set; } = null!;
 
         [Display(Name = "Примечания")]

@@ -14,7 +14,6 @@ var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
     ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 
-// Настройка контекста для работы с основной базой данных (например, для сущностей брачных агентов и других данных)
 builder.Services.AddDbContext<MarriageAgencyContext>(options => options.UseSqlServer(connectionString, b => b.MigrationsAssembly("MarriageAgency")));
 string connectionUsers = builder.Configuration.GetConnectionString("IdentityConnection");
 // Настройка контекста для Identity (пользователи, роли, аутентификация и т.д.)
@@ -24,7 +23,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultUI()
-    .AddDefaultTokenProviders();  // Make sure to add default token providers for email confirmation, etc.
+    .AddDefaultTokenProviders();
 
 // Добавление RazorPages и MVC
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();

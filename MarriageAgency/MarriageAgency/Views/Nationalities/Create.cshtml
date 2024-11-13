@@ -1,0 +1,57 @@
+﻿@model Nationality
+
+@{
+    ViewData["Title"] = "Создать";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="text-center mb-4">Создать</h2>
+
+<div class="container">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h4 class="card-title text-center mb-4">Национальность</h4>
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" data-validate="no-numbers" required/>
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Notes" class="control-label"></label>
+                    <input asp-for="Notes" class="form-control" data-validate="no-numbers" required/>
+                    <span asp-validation-for="Notes" class="text-danger"></span>
+                </div>
+                <div class="form-group text-center mt-4">
+                    <input type="submit" value="Создать" class="btn btn-primary" />
+                    <a asp-action="Index" class="btn btn-secondary ml-2">Вернуться к списку</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const textInputs = document.querySelectorAll("input[data-validate='no-numbers']");
+
+            textInputs.forEach(input => {
+                input.addEventListener("input", function () {
+                    // Проверка на числа
+                    if (/\d/.test(this.value)) {
+                        this.setCustomValidity("Числа не допускаются.");
+                    } else if (this.value.trim() === "") { // Проверка на пустоту
+                        this.setCustomValidity("Поле не должно быть пустым.");
+                    } else {    
+                        this.setCustomValidity("");
+                    }
+                });
+            });
+        });
+    </script>
+}

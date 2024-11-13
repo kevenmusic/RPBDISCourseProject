@@ -37,7 +37,6 @@
       "Tests/1.0.0": {
         "dependencies": {
           "MarriageAgency": "1.0.0",
-          "Microsoft.EntityFrameworkCore.InMemory": "8.0.10",
           "Microsoft.NET.Test.Sdk": "17.8.0",
           "Moq.EntityFrameworkCore": "8.0.1.2",
           "coverlet.collector": "6.0.0",
@@ -1724,20 +1723,6 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/8.0.10": {},
-      "Microsoft.EntityFrameworkCore.InMemory/8.0.10": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.10"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
-            "assemblyVersion": "8.0.10.0",
-            "fileVersion": "8.0.1024.46708"
-          }
-        },
-        "compile": {
-          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {}
-        }
-      },
       "Microsoft.EntityFrameworkCore.Relational/8.0.10": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.10",
@@ -6316,13 +6301,6 @@
       "sha512": "sha512-51KkPIc0EMv/gVXhPIUi6cwJE9Mvh+PLr4Lap4naLcsoGZ0lF2SvOPgUUprwRV3MnN7nyD1XPhT5RJ/p+xFAXw==",
       "path": "microsoft.entityframeworkcore.analyzers/8.0.10",
       "hashPath": "microsoft.entityframeworkcore.analyzers.8.0.10.nupkg.sha512"
-    },
-    "Microsoft.EntityFrameworkCore.InMemory/8.0.10": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-TdtSEbBsMg8dFq5T1PiOv48w2oiiduNzaEf3Fa7tO2b3lTBFO1y1Dla6ihs628P53TowsScjLSG8g5ZEw6KN0Q==",
-      "path": "microsoft.entityframeworkcore.inmemory/8.0.10",
-      "hashPath": "microsoft.entityframeworkcore.inmemory.8.0.10.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/8.0.10": {
       "type": "package",

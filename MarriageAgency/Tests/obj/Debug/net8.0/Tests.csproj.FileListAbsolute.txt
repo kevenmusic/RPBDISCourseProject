@@ -671,4 +671,3 @@ C:\Users\Konstantin\Desktop\3курс(5сем)\РПБДИС\CourseProject\Marria
 C:\Users\Konstantin\Desktop\3курс(5сем)\РПБДИС\CourseProject\MarriageAgency\Tests\obj\Debug\net8.0\Tests.pdb
 C:\Users\Konstantin\Desktop\3курс(5сем)\РПБДИС\CourseProject\MarriageAgency\Tests\obj\Debug\net8.0\Tests.genruntimeconfig.cache
 C:\Users\Konstantin\Desktop\3курс(5сем)\РПБДИС\CourseProject\MarriageAgency\Tests\obj\Debug\net8.0\ref\Tests.dll
-C:\Users\Konstantin\Desktop\3курс(5сем)\РПБДИС\CourseProject\MarriageAgency\Tests\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll

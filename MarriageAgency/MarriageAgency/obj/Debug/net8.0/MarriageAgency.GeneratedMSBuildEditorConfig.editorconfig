@@ -54,6 +54,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/AdditionalServices/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkaXRpb25hbFNlcnZpY2VzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/AdditionalServices/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkaXRpb25hbFNlcnZpY2VzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/AdditionalServices/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkaXRpb25hbFNlcnZpY2VzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/AdditionalServices/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkaXRpb25hbFNlcnZpY2VzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/AdditionalServices/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkaXRpb25hbFNlcnZpY2VzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/Clients/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -72,6 +92,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/Clients/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/Contacts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/Contacts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/Contacts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/Contacts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/Contacts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/Employees/Create.cshtml]
@@ -96,6 +136,62 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/Nationalities/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0aW9uYWxpdGllc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/Nationalities/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0aW9uYWxpdGllc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/Nationalities/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0aW9uYWxpdGllc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/Nationalities/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0aW9uYWxpdGllc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/Nationalities/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF0aW9uYWxpdGllc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/PhysicalAttributes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGh5c2ljYWxBdHRyaWJ1dGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/PhysicalAttributes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGh5c2ljYWxBdHRyaWJ1dGVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/PhysicalAttributes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGh5c2ljYWxBdHRyaWJ1dGVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/PhysicalAttributes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGh5c2ljYWxBdHRyaWJ1dGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/PhysicalAttributes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGh5c2ljYWxBdHRyaWJ1dGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/Roles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/Roles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/Roles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/Roles/UserList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcVXNlckxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/Services/Create.cshtml]
@@ -130,6 +226,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/Users/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/Users/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -140,6 +240,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/Users/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/ZodiacSigns/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWm9kaWFjU2lnbnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/ZodiacSigns/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWm9kaWFjU2lnbnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/ZodiacSigns/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWm9kaWFjU2lnbnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/ZodiacSigns/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWm9kaWFjU2lnbnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/ZodiacSigns/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWm9kaWFjU2lnbnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Konstantin/Desktop/3курс(5сем)/РПБДИС/CourseProject/MarriageAgency/MarriageAgency/Views/_ViewImports.cshtml]

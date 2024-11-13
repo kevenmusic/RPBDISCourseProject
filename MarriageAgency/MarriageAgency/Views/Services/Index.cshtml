@@ -22,19 +22,22 @@
     <fieldset class="form-group">
         <label for="ClientName" class="mr-2">Имя клиента:</label>
         @Html.TextBox("ClientName", ClientName, new { @class = "form-control mr-2", @id = "ClientName" })
+
         <label for="EmployeeName" class="mr-2">Имя сотрудника:</label>
         @Html.TextBox("EmployeeName", EmployeeName, new { @class = "form-control mr-2", @id = "EmployeeName" })
-        <label for="AdditionalServiceName" class="mr-2">Имя услуги:</label>
-        @Html.TextBox("AdditionalServiceName", AdditionalServiceName, new { @class = "form-control mr-2", @id = "AdditionalServiceName" })
 
-        <!-- New fields for cost range filtering -->
+        <label for="AdditionalServiceName" class="mr-2">Услуга:</label>
+        @Html.DropDownList("AdditionalServiceName", (SelectList)ViewData["Name"], "Выберите услугу", new { @class = "form-control mr-2", @id = "AdditionalServiceId" })
+
         <label for="MinCost" class="mr-2">Мин. цена:</label>
         @Html.TextBox("MinCost", MinCost, new { @class = "form-control mr-2", @id = "MinCost", type = "number", step = "0.01" })
+
         <label for="MaxCost" class="mr-2">Макс. цена:</label>
         @Html.TextBox("MaxCost", MaxCost, new { @class = "form-control mr-2", @id = "MaxCost", type = "number", step = "0.01" })
     </fieldset>
     <input type="submit" value="Найти" class="btn btn-outline-success mt-1" />
 }
+
 
 <table class="table table-striped table-bordered">
     <thead class="thead-light">
