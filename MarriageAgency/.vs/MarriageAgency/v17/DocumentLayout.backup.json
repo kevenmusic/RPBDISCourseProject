@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\views\\clients\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|solutionrelative:marriageagency\\views\\clients\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|solutionrelative:marriageagency\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|solutionrelative:marriageagency\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\taghelpers\\pagelinktaghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|solutionrelative:marriageagency\\taghelpers\\pagelinktaghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{45CCCE80-0991-4768-85D2-E43AB3A5E692}|Tests\\Tests.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\tests\\servicescontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45CCCE80-0991-4768-85D2-E43AB3A5E692}|Tests\\Tests.csproj|solutionrelative:tests\\servicescontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -49,10 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\controllers\\servicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|solutionrelative:marriageagency\\controllers\\servicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|solutionrelative:marriageagency\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\controllers\\additionalservicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -203,10 +215,6 @@
       "RelativeMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|solutionrelative:marriageagency\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\views\\clients\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|solutionrelative:marriageagency\\views\\clients\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\viewmodels\\physicalattributesviewmodel\\filterphysicalattributesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|solutionrelative:marriageagency\\viewmodels\\physicalattributesviewmodel\\filterphysicalattributesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -229,10 +237,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\views\\zodiacsigns\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|solutionrelative:marriageagency\\views\\zodiacsigns\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\taghelpers\\pagelinktaghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|solutionrelative:marriageagency\\taghelpers\\pagelinktaghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\migrations\\20241022164256_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -365,10 +369,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|solutionrelative:marriageagency\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|solutionrelative:marriageagency\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\viewmodels\\nationalitiesviewmodel\\filternationalitiesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -554,15 +554,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "ClientsControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\Tests\\ClientsControllerTests.cs",
               "RelativeDocumentMoniker": "Tests\\ClientsControllerTests.cs",
@@ -576,20 +580,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
               "Title": "ClientsController.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Controllers\\ClientsController.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\Controllers\\ClientsController.cs",
               "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Controllers\\ClientsController.cs",
               "RelativeToolTip": "MarriageAgency\\Controllers\\ClientsController.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowDsAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T18:45:49.042Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "ServicesController.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Controllers\\ServicesController.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\Controllers\\ServicesController.cs",
@@ -602,7 +607,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "ServicesControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\Tests\\ServicesControllerTests.cs",
               "RelativeDocumentMoniker": "Tests\\ServicesControllerTests.cs",
@@ -615,38 +620,8 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EmployeesControllerTests.cs",
-              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\Tests\\EmployeesControllerTests.cs",
-              "RelativeDocumentMoniker": "Tests\\EmployeesControllerTests.cs",
-              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\Tests\\EmployeesControllerTests.cs",
-              "RelativeToolTip": "Tests\\EmployeesControllerTests.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAqwH0AAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T12:53:26.125Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NationalitiesControllerTests.cs",
-              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\Tests\\NationalitiesControllerTests.cs",
-              "RelativeDocumentMoniker": "Tests\\NationalitiesControllerTests.cs",
-              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\Tests\\NationalitiesControllerTests.cs",
-              "RelativeToolTip": "Tests\\NationalitiesControllerTests.cs",
-              "ViewState": "AgIAAO8AAAAAAAAAAAAAwA8BAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T11:50:17.844Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "PhysicalAttributesControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\Tests\\PhysicalAttributesControllerTests.cs",
               "RelativeDocumentMoniker": "Tests\\PhysicalAttributesControllerTests.cs",
@@ -659,7 +634,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "ContactsControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\Tests\\ContactsControllerTests.cs",
               "RelativeDocumentMoniker": "Tests\\ContactsControllerTests.cs",
@@ -672,7 +647,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
+              "Title": "PageLinkTagHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\TagHelpers\\PageLinkTagHelper.cs",
+              "RelativeDocumentMoniker": "MarriageAgency\\TagHelpers\\PageLinkTagHelper.cs",
+              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\TagHelpers\\PageLinkTagHelper.cs",
+              "RelativeToolTip": "MarriageAgency\\TagHelpers\\PageLinkTagHelper.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAowIMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T11:43:02.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\appsettings.json",
+              "RelativeDocumentMoniker": "MarriageAgency\\appsettings.json",
+              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\appsettings.json",
+              "RelativeToolTip": "MarriageAgency\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-11T10:50:03.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\Clients\\Index.cshtml",
+              "RelativeDocumentMoniker": "MarriageAgency\\Views\\Clients\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\Clients\\Index.cshtml",
+              "RelativeToolTip": "MarriageAgency\\Views\\Clients\\Index.cshtml",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAAAIAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-06T18:54:30.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NationalitiesControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\Tests\\NationalitiesControllerTests.cs",
+              "RelativeDocumentMoniker": "Tests\\NationalitiesControllerTests.cs",
+              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\Tests\\NationalitiesControllerTests.cs",
+              "RelativeToolTip": "Tests\\NationalitiesControllerTests.cs",
+              "ViewState": "AgIAAO8AAAAAAAAAAAAAwA8BAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T11:50:17.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EmployeesControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\Tests\\EmployeesControllerTests.cs",
+              "RelativeDocumentMoniker": "Tests\\EmployeesControllerTests.cs",
+              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\Tests\\EmployeesControllerTests.cs",
+              "RelativeToolTip": "Tests\\EmployeesControllerTests.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAqwH0AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T12:53:26.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "AdditionalServicesControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\Tests\\AdditionalServicesControllerTests.cs",
               "RelativeDocumentMoniker": "Tests\\AdditionalServicesControllerTests.cs",
@@ -685,7 +725,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "ZodiacSignsControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\Tests\\ZodiacSignsControllerTests.cs",
               "RelativeDocumentMoniker": "Tests\\ZodiacSignsControllerTests.cs",
@@ -698,7 +738,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "TestDataHelper.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\Tests\\TestDataHelper.cs",
               "RelativeDocumentMoniker": "Tests\\TestDataHelper.cs",
@@ -711,7 +751,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "NationalitiesController.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Controllers\\NationalitiesController.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\Controllers\\NationalitiesController.cs",
@@ -724,7 +764,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "ContactsViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\ViewModels\\ContactsViewModel\\ContactsViewModel.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\ViewModels\\ContactsViewModel\\ContactsViewModel.cs",
@@ -737,7 +777,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "AdditionalServicesController.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Controllers\\AdditionalServicesController.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\Controllers\\AdditionalServicesController.cs",
@@ -749,7 +789,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "RolesController.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Controllers\\RolesController.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\Controllers\\RolesController.cs",
@@ -761,7 +801,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "PhysicalAttributesController.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Controllers\\PhysicalAttributesController.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\Controllers\\PhysicalAttributesController.cs",
@@ -773,7 +813,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "ZodiacSignsController.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Controllers\\ZodiacSignsController.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\Controllers\\ZodiacSignsController.cs",
@@ -785,7 +825,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\Controllers\\HomeController.cs",
@@ -797,7 +837,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "EmployeesController.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Controllers\\EmployeesController.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\Controllers\\EmployeesController.cs",
@@ -809,7 +849,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "ContactsController.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Controllers\\ContactsController.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\Controllers\\ContactsController.cs",
@@ -821,7 +861,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\PhysicalAttributes\\Delete.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\PhysicalAttributes\\Delete.cshtml",
@@ -833,7 +873,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\PhysicalAttributes\\Details.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\PhysicalAttributes\\Details.cshtml",
@@ -845,7 +885,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\PhysicalAttributes\\Edit.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\PhysicalAttributes\\Edit.cshtml",
@@ -857,7 +897,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\Services\\Delete.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\Services\\Delete.cshtml",
@@ -869,7 +909,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\AdditionalServices\\Delete.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\AdditionalServices\\Delete.cshtml",
@@ -881,7 +921,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\AdditionalServices\\Details.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\AdditionalServices\\Details.cshtml",
@@ -893,7 +933,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\PhysicalAttributes\\Create.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\PhysicalAttributes\\Create.cshtml",
@@ -905,7 +945,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\AdditionalServices\\Create.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\AdditionalServices\\Create.cshtml",
@@ -917,7 +957,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 31,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\AdditionalServices\\Edit.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\AdditionalServices\\Edit.cshtml",
@@ -929,7 +969,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 32,
               "Title": "AdditionalService.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\DataLayer\\Models\\AdditionalService.cs",
               "RelativeDocumentMoniker": "DataLayer\\Models\\AdditionalService.cs",
@@ -941,7 +981,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 33,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\PhysicalAttributes\\Index.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\PhysicalAttributes\\Index.cshtml",
@@ -953,7 +993,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 34,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\AdditionalServices\\Index.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\AdditionalServices\\Index.cshtml",
@@ -965,7 +1005,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 35,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\Nationalities\\Edit.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\Nationalities\\Edit.cshtml",
@@ -977,7 +1017,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 36,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\Services\\Edit.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\Services\\Edit.cshtml",
@@ -989,7 +1029,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 37,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\Services\\Index.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\Services\\Index.cshtml",
@@ -1001,7 +1041,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 39,
               "Title": "AdditionalServicesViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\ViewModels\\AdditionalServicesViewModel\\AdditionalServicesViewModel.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\ViewModels\\AdditionalServicesViewModel\\AdditionalServicesViewModel.cs",
@@ -1013,7 +1053,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 38,
               "Title": "FilterAdditionalServicesViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\ViewModels\\AdditionalServicesViewModel\\FilterAdditionalServicesViewModel.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\ViewModels\\AdditionalServicesViewModel\\FilterAdditionalServicesViewModel.cs",
@@ -1025,7 +1065,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 40,
               "Title": "ClientsViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\ViewModels\\ClientsViewModel\\ClientsViewModel.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\ViewModels\\ClientsViewModel\\ClientsViewModel.cs",
@@ -1037,7 +1077,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 41,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\Shared\\_Layout.cshtml",
@@ -1049,7 +1089,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 42,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\Nationalities\\Index.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\Nationalities\\Index.cshtml",
@@ -1061,7 +1101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 43,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\Employees\\Index.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\Employees\\Index.cshtml",
@@ -1073,7 +1113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 44,
               "Title": "FilterClientsViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\ViewModels\\ClientsViewModel\\FilterClientsViewModel.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\ViewModels\\ClientsViewModel\\FilterClientsViewModel.cs",
@@ -1085,7 +1125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 46,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\Clients\\Edit.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\Clients\\Edit.cshtml",
@@ -1097,7 +1137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 48,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\Employees\\Edit.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\Employees\\Edit.cshtml",
@@ -1109,7 +1149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 47,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\Contacts\\Edit.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\Contacts\\Edit.cshtml",
@@ -1121,7 +1161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 45,
               "Title": "PhysicalAttribute.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\DataLayer\\Models\\PhysicalAttribute.cs",
               "RelativeDocumentMoniker": "DataLayer\\Models\\PhysicalAttribute.cs",
@@ -1133,7 +1173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 49,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\Nationalities\\Create.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\Nationalities\\Create.cshtml",
@@ -1145,7 +1185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 51,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\Nationalities\\Details.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\Nationalities\\Details.cshtml",
@@ -1157,7 +1197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 50,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\Nationalities\\Delete.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\Nationalities\\Delete.cshtml",
@@ -1169,7 +1209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 53,
               "Title": "FilterPhysicalAttributesViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\ViewModels\\PhysicalAttributesViewModel\\FilterPhysicalAttributesViewModel.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\ViewModels\\PhysicalAttributesViewModel\\FilterPhysicalAttributesViewModel.cs",
@@ -1181,7 +1221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 52,
               "Title": "_LoginPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\Shared\\_LoginPartial.cshtml",
@@ -1193,19 +1233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\Clients\\Index.cshtml",
-              "RelativeDocumentMoniker": "MarriageAgency\\Views\\Clients\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\Clients\\Index.cshtml",
-              "RelativeToolTip": "MarriageAgency\\Views\\Clients\\Index.cshtml",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAIAAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-06T18:54:30.092Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 54,
               "Title": "PhysicalAttributesViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\ViewModels\\PhysicalAttributesViewModel\\PhysicalAttributesViewModel.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\ViewModels\\PhysicalAttributesViewModel\\PhysicalAttributesViewModel.cs",
@@ -1217,7 +1245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 55,
               "Title": "SortViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\ViewModels\\SortViewModel.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\ViewModels\\SortViewModel.cs",
@@ -1229,7 +1257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 56,
               "Title": "Client.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\DataLayer\\Models\\Client.cs",
               "RelativeDocumentMoniker": "DataLayer\\Models\\Client.cs",
@@ -1241,7 +1269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 57,
               "Title": "Contact.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\DataLayer\\Models\\Contact.cs",
               "RelativeDocumentMoniker": "DataLayer\\Models\\Contact.cs",
@@ -1253,7 +1281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 58,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\ZodiacSigns\\Index.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\ZodiacSigns\\Index.cshtml",
@@ -1265,19 +1293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
-              "Title": "PageLinkTagHelper.cs",
-              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\TagHelpers\\PageLinkTagHelper.cs",
-              "RelativeDocumentMoniker": "MarriageAgency\\TagHelpers\\PageLinkTagHelper.cs",
-              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\TagHelpers\\PageLinkTagHelper.cs",
-              "RelativeToolTip": "MarriageAgency\\TagHelpers\\PageLinkTagHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF4AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T11:43:02.24Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 62,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\Employees\\Create.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\Employees\\Create.cshtml",
@@ -1289,7 +1305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 59,
               "Title": "20241022164256_Initial.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Migrations\\20241022164256_Initial.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\Migrations\\20241022164256_Initial.cs",
@@ -1301,7 +1317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 64,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\Contacts\\Details.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\Contacts\\Details.cshtml",
@@ -1313,7 +1329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 60,
               "Title": "20241107122433_Add FromImage.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Migrations\\20241107122433_Add FromImage.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\Migrations\\20241107122433_Add FromImage.cs",
@@ -1325,7 +1341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 61,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\Contacts\\Create.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\Contacts\\Create.cshtml",
@@ -1337,7 +1353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 63,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\Contacts\\Delete.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\Contacts\\Delete.cshtml",
@@ -1349,7 +1365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 65,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\ZodiacSigns\\Details.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\ZodiacSigns\\Details.cshtml",
@@ -1361,7 +1377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 66,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\ZodiacSigns\\Delete.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\ZodiacSigns\\Delete.cshtml",
@@ -1373,7 +1389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 67,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\Employees\\Delete.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\Employees\\Delete.cshtml",
@@ -1385,7 +1401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 68,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\Employees\\Details.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\Employees\\Details.cshtml",
@@ -1397,7 +1413,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 69,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\Contacts\\Index.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\Contacts\\Index.cshtml",
@@ -1409,7 +1425,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 70,
               "Title": "FilterContactsViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\ViewModels\\ContactsViewModel\\FilterContactsViewModel.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\ViewModels\\ContactsViewModel\\FilterContactsViewModel.cs",
@@ -1421,7 +1437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 71,
               "Title": "DbUserInitializer.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Data\\DbUserInitializer.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\Data\\DbUserInitializer.cs",
@@ -1433,7 +1449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 72,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\Models\\ApplicationUser.cs",
@@ -1445,7 +1461,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 73,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Program.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\Program.cs",
@@ -1457,7 +1473,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 74,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\Data\\ApplicationDbContext.cs",
@@ -1469,7 +1485,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 75,
               "Title": "SessionExtensions.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Infrastructure\\SessionExtensions.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\Infrastructure\\SessionExtensions.cs",
@@ -1481,7 +1497,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 76,
               "Title": "DbInitializerMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Midlleware\\DbInitializerMiddleware.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\Midlleware\\DbInitializerMiddleware.cs",
@@ -1493,7 +1509,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 77,
               "Title": "MarriageAgencyContext.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\DataLayer\\Data\\MarriageAgencyContext.cs",
               "RelativeDocumentMoniker": "DataLayer\\Data\\MarriageAgencyContext.cs",
@@ -1505,7 +1521,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 78,
               "Title": "ServiceService.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Services\\ServiceService.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\Services\\ServiceService.cs",
@@ -1517,7 +1533,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 79,
               "Title": "Nationality.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\DataLayer\\Models\\Nationality.cs",
               "RelativeDocumentMoniker": "DataLayer\\Models\\Nationality.cs",
@@ -1529,7 +1545,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 80,
               "Title": "ZodiacSign.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\DataLayer\\Models\\ZodiacSign.cs",
               "RelativeDocumentMoniker": "DataLayer\\Models\\ZodiacSign.cs",
@@ -1541,7 +1557,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 81,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\ZodiacSigns\\Edit.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\ZodiacSigns\\Edit.cshtml",
@@ -1553,7 +1569,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 82,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\ZodiacSigns\\Create.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\ZodiacSigns\\Create.cshtml",
@@ -1565,7 +1581,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 83,
               "Title": "ZodiacSignsViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\ViewModels\\ZodiacSignsViewModel\\ZodiacSignsViewModel.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\ViewModels\\ZodiacSignsViewModel\\ZodiacSignsViewModel.cs",
@@ -1577,7 +1593,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 84,
               "Title": "FilterZodiacSignsViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\ViewModels\\ZodiacSignsViewModel\\FilterZodiacSignsViewModel.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\ViewModels\\ZodiacSignsViewModel\\FilterZodiacSignsViewModel.cs",
@@ -1589,7 +1605,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 85,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\Controllers\\UsersController.cs",
@@ -1601,7 +1617,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 86,
               "Title": "ServicesViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\ViewModels\\ServicesViewModel\\ServicesViewModel.cs",
               "RelativeDocumentMoniker": "MarriageAgency\\ViewModels\\ServicesViewModel\\ServicesViewModel.cs",
@@ -1613,7 +1629,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 88,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\_ViewStart.cshtml",
@@ -1625,7 +1641,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 87,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\_ViewImports.cshtml",
@@ -1637,7 +1653,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 89,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\Clients\\Create.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\Clients\\Create.cshtml",
@@ -1649,7 +1665,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 90,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\Services\\Create.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\Services\\Create.cshtml",
@@ -1662,18 +1678,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 91,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\appsettings.json",
-              "RelativeDocumentMoniker": "MarriageAgency\\appsettings.json",
-              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\appsettings.json",
-              "RelativeToolTip": "MarriageAgency\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-11T10:50:03.13Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 90,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "MarriageAgency\\Views\\Home\\Index.cshtml",
