@@ -1,4 +1,5 @@
 ﻿@using MarriageAgency.ViewModels.PhysicalAttributesViewModel;
+@using MarriageAgency.ViewModels.SortStates;
 @model PhysicalAttributesViewModel;
 
 @{
@@ -48,11 +49,11 @@
                 @Html.DisplayNameFor(model => model.FilterPhysicalAttributesViewModel.Hobbies)
                 <a asp-action="Index" asp-route-sortOrder="@Model.SortViewModel.HobbiesSort" asp-route-Hobbies="@Hobbies"
                    style="color: inherit; text-decoration: none; display: inline-flex; align-items: center;">
-                    @if (Model.SortViewModel.HobbiesSort == SortState.HobbiesAsc)
+                    @if (Model.SortViewModel.HobbiesSort == PhysicalAttributeSortState.HobbiesAsc)
                     {
                         <span class="bi bi-arrow-up" style="margin-left: 5px;"></span>
                     }
-                    else if (Model.SortViewModel.HobbiesSort == SortState.HobbiesDesc)
+                    else if (Model.SortViewModel.HobbiesSort == PhysicalAttributeSortState.HobbiesDesc)
                     {
                         <span class="bi bi-arrow-down" style="margin-left: 5px;"></span>
                     }

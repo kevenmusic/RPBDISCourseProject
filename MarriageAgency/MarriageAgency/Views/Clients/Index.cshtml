@@ -1,4 +1,5 @@
 ﻿@using MarriageAgency.ViewModels.ClientsViewModel;
+@using MarriageAgency.ViewModels.SortStates;
 @model ClientsViewModel;
 
 @{
@@ -67,11 +68,11 @@
                    asp-route-NationalityName="@NationalityName" asp-route-ZodiacSignName="@ZodiacSignName" asp-route-Age="@Age" asp-route-Hobbies="@Hobbies"
                    style="color: inherit; text-decoration: none; display: inline-flex; align-items: center;">
                     @Html.DisplayNameFor(model => model.FilterClientsViewModel.ClientName)
-                    @if (Model.SortViewModel.ClientNameSort == SortState.ClientNameAsc)
+                    @if (Model.SortViewModel.ClientNameSort == ClientSortState.ClientNameAsc)
                     {
                         <span class="bi bi-arrow-up" style="margin-left: 5px;"></span>
                     }
-                    else if (Model.SortViewModel.ClientNameSort == SortState.ClientNameDesc)
+                    else if (Model.SortViewModel.ClientNameSort == ClientSortState.ClientNameDesc)
                     {
                         <span class="bi bi-arrow-down" style="margin-left: 5px;"></span>
                     }
@@ -84,11 +85,11 @@
                 <a asp-action="Index" asp-route-sortOrder="@Model.SortViewModel.GenderSort" asp-route-ClientName="@ClientName" asp-route-Gender="@Gender"
                    asp-route-NationalityName="@NationalityName" asp-route-ZodiacSignName="@ZodiacSignName" asp-route-Age="@Age" asp-route-Hobbies="@Hobbies"
                    style="color: inherit; text-decoration: none; display: inline-flex; align-items: center;">
-                    @if (Model.SortViewModel.GenderSort == SortState.GenderAsc)
+                    @if (Model.SortViewModel.GenderSort == ClientSortState.GenderAsc)
                     {
                         <span class="bi bi-arrow-up" style="margin-left: 5px;"></span>
                     }
-                    else if (Model.SortViewModel.GenderSort == SortState.GenderDesc)
+                    else if (Model.SortViewModel.GenderSort == ClientSortState.GenderDesc)
                     {
                         <span class="bi bi-arrow-down" style="margin-left: 5px;"></span>
                     }
@@ -102,11 +103,11 @@
                 <a asp-action="Index" asp-route-sortOrder="@Model.SortViewModel.AgeSort" asp-route-ClientName="@ClientName" asp-route-Gender="@Gender"
                    asp-route-NationalityName="@NationalityName" asp-route-ZodiacSignName="@ZodiacSignName" asp-route-Age="@Age" asp-route-Hobbies="@Hobbies"
                    style="color: inherit; text-decoration: none; display: inline-flex; align-items: center;">
-                    @if (Model.SortViewModel.AgeSort == SortState.AgeAsc)
+                    @if (Model.SortViewModel.AgeSort == ClientSortState.AgeAsc)
                     {
                         <span class="bi bi-arrow-up" style="margin-left: 5px;"></span>
                     }
-                    else if (Model.SortViewModel.AgeSort == SortState.AgeDesc)
+                    else if (Model.SortViewModel.AgeSort == ClientSortState.AgeDesc)
                     {
                         <span class="bi bi-arrow-down" style="margin-left: 5px;"></span>
                     }
@@ -117,11 +118,11 @@
                 <a asp-action="Index" asp-route-sortOrder="@Model.SortViewModel.HobbiesSort" asp-route-ClientName="@ClientName" asp-route-Gender="@Gender"
                    asp-route-NationalityName="@NationalityName" asp-route-ZodiacSignName="@ZodiacSignName" asp-route-Age="@Age" asp-route-Hobbies="@Hobbies"
                    style="color: inherit; text-decoration: none; display: inline-flex; align-items: center;">
-                    @if (Model.SortViewModel.HobbiesSort == SortState.HobbiesAsc)
+                    @if (Model.SortViewModel.HobbiesSort == ClientSortState.HobbiesAsc)
                     {
                         <span class="bi bi-arrow-up" style="margin-left: 5px;"></span>
                     }
-                    else if (Model.SortViewModel.HobbiesSort == SortState.HobbiesDesc)
+                    else if (Model.SortViewModel.HobbiesSort == ClientSortState.HobbiesDesc)
                     {
                         <span class="bi bi-arrow-down" style="margin-left: 5px;"></span>
                     }
@@ -129,14 +130,14 @@
             </th>
             <th style="width: 150px;">
                 @Html.DisplayNameFor(model => model.FilterClientsViewModel.NationalityName)
-                <a asp-action="Index" asp-route-sortOrder="@Model.SortViewModel.NationalitySort" asp-route-ClientName="@ClientName" asp-route-Gender="@Gender"
+                <a asp-action="Index" asp-route-sortOrder="@Model.SortViewModel.NationalityNameSort" asp-route-ClientName="@ClientName" asp-route-Gender="@Gender"
                    asp-route-NationalityName="@NationalityName" asp-route-ZodiacSignName="@ZodiacSignName" asp-route-Age="@Age" asp-route-Hobbies="@Hobbies"
                    style="color: inherit; text-decoration: none; display: inline-flex; align-items: center;">
-                    @if (Model.SortViewModel.NationalitySort == SortState.NationalityAsc)
+                    @if (Model.SortViewModel.NationalityNameSort == ClientSortState.NationalityNameAsc)
                     {
                         <span class="bi bi-arrow-up" style="margin-left: 5px;"></span>
                     }
-                    else if (Model.SortViewModel.NationalitySort == SortState.NationalityDesc)
+                    else if (Model.SortViewModel.NationalityNameSort == ClientSortState.NationalityNameDesc)
                     {
                         <span class="bi bi-arrow-down" style="margin-left: 5px;"></span>
                     }
@@ -147,11 +148,11 @@
                 <a asp-action="Index" asp-route-sortOrder="@Model.SortViewModel.ZodiacSignNameSort" asp-route-ClientName="@ClientName" asp-route-Gender="@Gender"
                    asp-route-NationalityName="@NationalityName" asp-route-ZodiacSignName="@ZodiacSignName" asp-route-Age="@Age" asp-route-Hobbies="@Hobbies"
                    style="color: inherit; text-decoration: none; display: inline-flex; align-items: center;">
-                    @if (Model.SortViewModel.ZodiacSignNameSort == SortState.ZodiacSignNameAsc)
+                    @if (Model.SortViewModel.ZodiacSignNameSort == ClientSortState.ZodiacSignNameAsc)
                     {
                         <span class="bi bi-arrow-up" style="margin-left: 5px;"></span>
                     }
-                    else if (Model.SortViewModel.ZodiacSignNameSort == SortState.ZodiacSignNameDesc)
+                    else if (Model.SortViewModel.ZodiacSignNameSort == ClientSortState.ZodiacSignNameDesc)
                     {
                         <span class="bi bi-arrow-down" style="margin-left: 5px;"></span>
                     }

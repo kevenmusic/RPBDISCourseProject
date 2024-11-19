@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using MarriageAgency.ViewModels.SortStates;
+using MarriageAgency.ViewModels.SortViewModels;
 
 namespace MarriageAgency.Controllers
 {
@@ -29,7 +31,7 @@ namespace MarriageAgency.Controllers
         [SetToSession("Service")]
         [Authorize]
         [ResponseCache(Location = ResponseCacheLocation.Any, Duration = 264)]
-        public async Task<IActionResult> Index(FilterServicesViewModel service, SortState sortOrder = SortState.No, int page = 1)
+        public async Task<IActionResult> Index(FilterServicesViewModel service, ServiceSortState sortOrder = ServiceSortState.No, int page = 1)
         {
             if (service.ClientName == null && service.EmployeeName == null 
                 && service.AdditionalServiceName == null && service.MinCost == null  && service.MaxCost == null)
@@ -64,7 +66,7 @@ namespace MarriageAgency.Controllers
             ServicesViewModel services = new()
             {
                 Services = servicesList,
-                SortViewModel = new SortViewModel(sortOrder),
+                SortViewModel = new ServiceSortViewModel(sortOrder),
                 FilterServicesViewModel = service,
                 PageViewModel = new PageViewModel(count, page, pageSize)
             };
@@ -225,7 +227,7 @@ namespace MarriageAgency.Controllers
 
         private static IQueryable<Service> Sort_Search(
          IQueryable<Service> services,
-         SortState sortOrder,
+         ServiceSortState sortOrder,
          string searchClientName,
          string searchEmployeeName,
          string additionalServiceName,
@@ -234,28 +236,28 @@ namespace MarriageAgency.Controllers
         {
             switch (sortOrder)
             {
-                case SortState.ClientNameAsc:
+                case ServiceSortState.ClientNameAsc:
                     services = services.OrderBy(s => s.Client.FirstName);
                     break;
-                case SortState.ClientNameDesc:
+                case ServiceSortState.ClientNameDesc:
                     services = services.OrderByDescending(s => s.Client.FirstName);
                     break;
-                case SortState.EmployeeNameAsc:
+                case ServiceSortState.EmployeeNameAsc:
                     services = services.OrderBy(s => s.Employee.FirstName);
                     break;
-                case SortState.EmployeeNameDesc:
+                case ServiceSortState.EmployeeNameDesc:
                     services = services.OrderByDescending(s => s.Employee.FirstName);
                     break;
-                case SortState.AdditionalNameAsc:
+                case ServiceSortState.AdditionalNameAsc:
                     services = services.OrderBy(s => s.AdditionalService.Name);
                     break;
-                case SortState.AdditionalNameDesc:
+                case ServiceSortState.AdditionalNameDesc:
                     services = services.OrderByDescending(s => s.AdditionalService.Name);
                     break;
-                case SortState.CostAsc:
+                case ServiceSortState.CostAsc:
                     services = services.OrderBy(s => s.Cost);
                     break;
-                case SortState.CostDesc:
+                case ServiceSortState.CostDesc:
                     services = services.OrderByDescending(s => s.Cost);
                     break;
 

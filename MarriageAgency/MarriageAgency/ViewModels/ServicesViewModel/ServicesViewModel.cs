@@ -1,6 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc.Rendering;
-using System.Collections.Generic;
-using MarriageAgency.DataLayer.Models;
+﻿using MarriageAgency.DataLayer.Models;
+using MarriageAgency.ViewModels.SortViewModels;
 
 namespace MarriageAgency.ViewModels.ServicesViewModel
 {
@@ -13,6 +12,6 @@ namespace MarriageAgency.ViewModels.ServicesViewModel
         //Свойство для навигации по страницам
         public PageViewModel PageViewModel { get; set; }
 
-        public SortViewModel SortViewModel { get; set; }
+        public ServiceSortViewModel SortViewModel { get; set; }
     }
 }

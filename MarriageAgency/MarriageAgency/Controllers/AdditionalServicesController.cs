@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MarriageAgency.ViewModels.AdditionalServicesViewModel;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using MarriageAgency.ViewModels.SortStates;
+using MarriageAgency.ViewModels.SortViewModels;
 
 namespace MarriageAgency.Controllers
 {
@@ -30,7 +32,7 @@ namespace MarriageAgency.Controllers
         [SetToSession("AdditionalService")]
         [Authorize]
         [ResponseCache(Location = ResponseCacheLocation.Any, Duration = 264)]
-        public async Task<IActionResult> Index(FilterAdditionalServicesViewModel additionalService, SortState sortOrder = SortState.No, int page = 1)
+        public async Task<IActionResult> Index(FilterAdditionalServicesViewModel additionalService, AdditionalServiceSortState sortOrder = AdditionalServiceSortState.No, int page = 1)
         {
             if (additionalService.AdditionalServiceName == null)
             {
@@ -59,7 +61,7 @@ namespace MarriageAgency.Controllers
             {
                 AdditionalServices = additionalServicesList,
                 PageViewModel = new PageViewModel(count, page, pageSize),
-                SortViewModel = new SortViewModel(sortOrder),
+                SortViewModel = new AdditionalServiceSortViewModel(sortOrder),
                 FilterAdditionalServicesViewModel = additionalService,
             };
 
@@ -201,7 +203,7 @@ namespace MarriageAgency.Controllers
             return _context.AdditionalServices.Any(e => e.AdditionalServiceId == id);
         }
 
-        private static IQueryable<AdditionalService> Sort_Search(IQueryable<AdditionalService> additionalServices, SortState sortOrder, string additionalServiceName)
+        private static IQueryable<AdditionalService> Sort_Search(IQueryable<AdditionalService> additionalServices, AdditionalServiceSortState sortOrder, string additionalServiceName)
         {
             if (!string.IsNullOrEmpty(additionalServiceName))
             {
@@ -210,10 +212,10 @@ namespace MarriageAgency.Controllers
 
             switch (sortOrder)
             {
-                case SortState.AdditionalNameAsc:
+                case AdditionalServiceSortState.AdditionalNameAsc:
                     additionalServices = additionalServices.OrderBy(s => s.Name);
                     break;
-                case SortState.AdditionalNameDesc:
+                case AdditionalServiceSortState.AdditionalNameDesc:
                     additionalServices = additionalServices.OrderByDescending(s => s.Name);
                     break;
                 default:

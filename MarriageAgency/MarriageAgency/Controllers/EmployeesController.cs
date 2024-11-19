@@ -7,6 +7,8 @@ using MarriageAgency.ViewModels.EmployeesViewModel;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using MarriageAgency.ViewModels.SortStates;
+using MarriageAgency.ViewModels.SortViewModels;
 
 namespace MarriageAgency.Controllers
 {
@@ -28,7 +30,7 @@ namespace MarriageAgency.Controllers
         [SetToSession("Employee")]
         [Authorize]
         [ResponseCache(Location = ResponseCacheLocation.Any, Duration = 264)]
-        public async Task<IActionResult> Index(FilterEmployeesViewModel employee, SortState sortOrder = SortState.No, int page = 1, DateOnly? birthDate = null)
+        public async Task<IActionResult> Index(FilterEmployeesViewModel employee, EmployeeSortState sortOrder = EmployeeSortState.No, int page = 1, DateOnly? birthDate = null)
         {
             if (employee.EmployeeName == null && employee.EmployeeMiddleName == null 
                 && employee.EmployeeLastName == null
@@ -58,7 +60,7 @@ namespace MarriageAgency.Controllers
             {
                 Employees = await marriageAgencyContext.ToListAsync(),
                 PageViewModel = new PageViewModel(count, page, pageSize),
-                SortViewModel = new SortViewModel(sortOrder),
+                SortViewModel = new EmployeeSortViewModel(sortOrder),
                 FilterEmployeesViewModel = employee,
             };
 
@@ -200,7 +202,7 @@ namespace MarriageAgency.Controllers
             return _context.Employees.Any(e => e.EmployeeId == id);
         }
 
-        private static IQueryable<Employee> Sort_Search(IQueryable<Employee> employees, SortState sortOrder, string employeeName, string employeeLastName, string employeeMiddleName, DateOnly? birthDate)
+        private static IQueryable<Employee> Sort_Search(IQueryable<Employee> employees, EmployeeSortState sortOrder, string employeeName, string employeeLastName, string employeeMiddleName, DateOnly? birthDate)
         {
             if (!string.IsNullOrEmpty(employeeName))
             {
@@ -224,28 +226,28 @@ namespace MarriageAgency.Controllers
 
             switch (sortOrder)
             {
-                case SortState.EmployeeNameAsc:
+                case EmployeeSortState.EmployeeNameAsc:
                     employees = employees.OrderBy(s => s.FirstName);
                     break;
-                case SortState.EmployeeNameDesc:
+                case EmployeeSortState.EmployeeNameDesc:
                     employees = employees.OrderByDescending(s => s.FirstName);
                     break;
-                case SortState.EmployeeLastNameAsc:
+                case EmployeeSortState.EmployeeLastNameAsc:
                     employees = employees.OrderBy(s => s.LastName);
                     break;
-                case SortState.EmployeeLastNameDesc:
+                case EmployeeSortState.EmployeeLastNameDesc:
                     employees = employees.OrderByDescending(s => s.LastName); 
                     break;
-                case SortState.EmployeeMiddleNameAsc:
+                case EmployeeSortState.EmployeeMiddleNameAsc:
                     employees = employees.OrderBy(s => s.MiddleName); 
                     break;
-                case SortState.EmployeeMiddleNameDesc:
+                case EmployeeSortState.EmployeeMiddleNameDesc:
                     employees = employees.OrderByDescending(s => s.MiddleName);
                     break;
-                case SortState.BirthDateAsc:
+                case EmployeeSortState.BirthDateAsc:
                     employees = employees.OrderBy(s => s.BirthDate);
                     break;
-                case SortState.BirthDateDesc:
+                case EmployeeSortState.BirthDateDesc:
                     employees = employees.OrderByDescending(s => s.BirthDate);
                     break;
                 default:

@@ -1,4 +1,5 @@
 ﻿@using MarriageAgency.ViewModels.AdditionalServicesViewModel;
+@using MarriageAgency.ViewModels.SortStates;
 @model AdditionalServicesViewModel;
 
 @{
@@ -32,11 +33,11 @@
                    style="color: inherit; text-decoration: none; display: inline-flex; align-items: center;">
                     @Html.DisplayNameFor(model => model.FilterAdditionalServicesViewModel.AdditionalServiceName)
 
-                    @if (Model.SortViewModel.AdditionalNameSort == SortState.AdditionalNameAsc)
+                    @if (Model.SortViewModel.AdditionalNameSort == AdditionalServiceSortState.AdditionalNameAsc)
                     {
                         <span class="bi bi-arrow-up" style="margin-left: 5px;"></span>
                     }
-                    else if (Model.SortViewModel.AdditionalNameSort == SortState.AdditionalNameDesc)
+                    else if (Model.SortViewModel.AdditionalNameSort == AdditionalServiceSortState.AdditionalNameDesc)
                     {
                         <span class="bi bi-arrow-down" style="margin-left: 5px;"></span>
                     }

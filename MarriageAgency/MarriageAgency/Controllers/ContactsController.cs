@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MarriageAgency.ViewModels.ContactsViewModel;
+using MarriageAgency.ViewModels.SortStates;
+using MarriageAgency.ViewModels.SortViewModels;
 
 namespace MarriageAgency.Controllers
 {
@@ -31,7 +33,7 @@ namespace MarriageAgency.Controllers
         [ResponseCache(Location = ResponseCacheLocation.Any, Duration = 264)]
         [SetToSession("Contact")]
         [Authorize]
-        public async Task<IActionResult> Index(FilterContactsViewModel contact, SortState sortOrder = SortState.No, int page = 1)
+        public async Task<IActionResult> Index(FilterContactsViewModel contact, ContactSortState sortOrder = ContactSortState.No, int page = 1)
         {
             if (contact.ContactAddress == null)
             {
@@ -60,7 +62,7 @@ namespace MarriageAgency.Controllers
             {
                 Contacts = contactList,
                 PageViewModel = new PageViewModel(count, page, pageSize),
-                SortViewModel = new SortViewModel(sortOrder),
+                SortViewModel = new ContactSortViewModel(sortOrder),
                 FilterContactsViewModel = contact,
             };
 
@@ -207,7 +209,7 @@ namespace MarriageAgency.Controllers
             return _context.Contacts.Any(e => e.ClientId == id);
         }
 
-        private static IQueryable<Contact> Sort_Search(IQueryable<Contact> contacts, SortState sortOrder, string contactAddress)
+        private static IQueryable<Contact> Sort_Search(IQueryable<Contact> contacts, ContactSortState sortOrder, string contactAddress)
         {
             if (!string.IsNullOrEmpty(contactAddress))
             {
@@ -216,10 +218,10 @@ namespace MarriageAgency.Controllers
 
             switch (sortOrder)
             {
-                case SortState.ContactAddressAsc:
+                case ContactSortState.ContactAddressAsc:
                     contacts = contacts.OrderBy(s => s.Address);
                     break;
-                case SortState.ContactAddressDesc:
+                case ContactSortState.ContactAddressDesc:
                     contacts = contacts.OrderByDescending(s => s.Address);
                     break;
                 default:

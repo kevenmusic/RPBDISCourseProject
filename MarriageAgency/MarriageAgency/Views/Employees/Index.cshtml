@@ -1,4 +1,5 @@
 ﻿@using MarriageAgency.ViewModels.EmployeesViewModel;
+@using MarriageAgency.ViewModels.SortStates;
 @model EmployeesViewModel;
 
 @{
@@ -54,11 +55,11 @@
                    style="color: inherit; text-decoration: none; display: inline-flex; align-items: center;">
                     @Html.DisplayNameFor(model => model.FilterEmployeesViewModel.EmployeeName)
 
-                    @if (Model.SortViewModel.EmployeeNameSort == SortState.EmployeeNameAsc)
+                    @if (Model.SortViewModel.EmployeeNameSort == EmployeeSortState.EmployeeNameAsc)
                     {
                         <span class="bi bi-arrow-up" style="margin-left: 5px;"></span>
                     }
-                    else if (Model.SortViewModel.EmployeeNameSort == SortState.EmployeeNameDesc)
+                    else if (Model.SortViewModel.EmployeeNameSort == EmployeeSortState.EmployeeNameDesc)
                     {
                         <span class="bi bi-arrow-down" style="margin-left: 5px;"></span>
                     }
@@ -74,11 +75,11 @@
                    style="color: inherit; text-decoration: none; display: inline-flex; align-items: center;">
                     @Html.DisplayNameFor(model => model.FilterEmployeesViewModel.EmployeeLastName)
 
-                    @if (Model.SortViewModel.EmployeeLastNameSort == SortState.EmployeeLastNameAsc)
+                    @if (Model.SortViewModel.EmployeeLastNameSort == EmployeeSortState.EmployeeLastNameAsc)
                     {
                         <span class="bi bi-arrow-up" style="margin-left: 5px;"></span>
                     }
-                    else if (Model.SortViewModel.EmployeeLastNameSort == SortState.EmployeeLastNameDesc)
+                    else if (Model.SortViewModel.EmployeeLastNameSort == EmployeeSortState.EmployeeLastNameDesc)
                     {
                         <span class="bi bi-arrow-down" style="margin-left: 5px;"></span>
                     }
@@ -94,11 +95,11 @@
                    style="color: inherit; text-decoration: none; display: inline-flex; align-items: center;">
                     @Html.DisplayNameFor(model => model.FilterEmployeesViewModel.EmployeeMiddleName)
 
-                    @if (Model.SortViewModel.EmployeeMiddleNameSort == SortState.EmployeeMiddleNameAsc)
+                    @if (Model.SortViewModel.EmployeeMiddleNameSort == EmployeeSortState.EmployeeMiddleNameAsc)
                     {
                         <span class="bi bi-arrow-up" style="margin-left: 5px;"></span>
                     }
-                    else if (Model.SortViewModel.EmployeeMiddleNameSort == SortState.EmployeeMiddleNameDesc)
+                    else if (Model.SortViewModel.EmployeeMiddleNameSort == EmployeeSortState.EmployeeMiddleNameDesc)
                     {
                         <span class="bi bi-arrow-down" style="margin-left: 5px;"></span>
                     }
@@ -117,11 +118,11 @@
                    style="color: inherit; text-decoration: none; display: inline-flex; align-items: center;">
                     @Html.DisplayNameFor(model => model.FilterEmployeesViewModel.BirthDate)
 
-                    @if (Model.SortViewModel.BirthDateSort == SortState.BirthDateAsc)
+                    @if (Model.SortViewModel.BirthDateSort == EmployeeSortState.BirthDateAsc)
                     {
                         <span class="bi bi-arrow-up" style="margin-left: 5px;"></span>
                     }
-                    else if (Model.SortViewModel.BirthDateSort == SortState.BirthDateDesc)
+                    else if (Model.SortViewModel.BirthDateSort == EmployeeSortState.BirthDateDesc)
                     {
                         <span class="bi bi-arrow-down" style="margin-left: 5px;"></span>
                     }

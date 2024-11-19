@@ -1,13 +1,14 @@
 ﻿using MarriageAgency.DataLayer.Data;
 using MarriageAgency.DataLayer.Models;
-using MarriageAgency.Infrastructure.Filters;
 using MarriageAgency.Infrastructure;
+using MarriageAgency.Infrastructure.Filters;
 using MarriageAgency.ViewModels;
+using MarriageAgency.ViewModels.PhysicalAttributesViewModel;
+using MarriageAgency.ViewModels.SortStates;
+using MarriageAgency.ViewModels.SortViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using MarriageAgency.ViewModels.PhysicalAttributesViewModel;
 
 namespace MarriageAgency.Controllers
 {
@@ -29,7 +30,7 @@ namespace MarriageAgency.Controllers
         [ResponseCache(Location = ResponseCacheLocation.Any, Duration = 264)]
         [SetToSession("PhysicalAttribute")]
         [Authorize]
-        public async Task<IActionResult> Index(FilterPhysicalAttributesViewModel physicalAttribute, SortState sortOrder = SortState.No, int page = 1)
+        public async Task<IActionResult> Index(FilterPhysicalAttributesViewModel physicalAttribute, PhysicalAttributeSortState sortOrder = PhysicalAttributeSortState.No, int page = 1)
         {
             if (physicalAttribute.Hobbies == null)
             {
@@ -58,7 +59,7 @@ namespace MarriageAgency.Controllers
             {
                 PhysicalAttributes = physicalAttributeList,
                 PageViewModel = new PageViewModel(count, page, pageSize),
-                SortViewModel = new SortViewModel(sortOrder),
+                SortViewModel = new PhysicalAttributeSortViewModel(sortOrder),
                 FilterPhysicalAttributesViewModel = physicalAttribute,
             };
 
@@ -200,7 +201,7 @@ namespace MarriageAgency.Controllers
             return _context.PhysicalAttributes.Any(e => e.ClientId == id);
         }
 
-        private static IQueryable<PhysicalAttribute> Sort_Search(IQueryable<PhysicalAttribute> physicalAttributes, SortState sortOrder, string Hobbies)
+        private static IQueryable<PhysicalAttribute> Sort_Search(IQueryable<PhysicalAttribute> physicalAttributes, PhysicalAttributeSortState sortOrder, string Hobbies)
         {
             if (!string.IsNullOrEmpty(Hobbies))
             {
@@ -209,10 +210,10 @@ namespace MarriageAgency.Controllers
 
             switch (sortOrder)
             {
-                case SortState.HobbiesAsc:
+                case PhysicalAttributeSortState.HobbiesAsc:
                     physicalAttributes = physicalAttributes.OrderBy(s => s.Hobbies);
                     break;
-                case SortState.HobbiesDesc:
+                case PhysicalAttributeSortState.HobbiesDesc:
                     physicalAttributes = physicalAttributes.OrderByDescending(s => s.Hobbies);
                     break;
                 default:

@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Users\\Konstantin\\Desktop\\3курс(5сем)\\РПБДИС\\CourseProject\\MarriageAgency\\MarriageAgency\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MarriageAgency.bundle.scp.css",
-      "PackagePath": "staticwebassets\\MarriageAgency.bundle.scp.css"
+      "PackagePath": "staticwebassets\\MarriageAgency.abeszw1buy.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\Konstantin\\Desktop\\3курс(5сем)\\РПБДИС\\CourseProject\\MarriageAgency\\MarriageAgency\\wwwroot\\css\\site.css",
@@ -13,24 +13,28 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Konstantin\\Desktop\\3курс(5сем)\\РПБДИС\\CourseProject\\MarriageAgency\\MarriageAgency\\wwwroot\\images\\1.png",
-      "PackagePath": "staticwebassets\\images\\1.png"
+      "Id": "C:\\Users\\Konstantin\\Desktop\\3курс(5сем)\\РПБДИС\\CourseProject\\MarriageAgency\\MarriageAgency\\wwwroot\\images\\05d800d1-1ce4-4ea9-8350-616cba47d2e0_5.png",
+      "PackagePath": "staticwebassets\\images\\05d800d1-1ce4-4ea9-8350-616cba47d2e0_5.png"
     },
     {
-      "Id": "C:\\Users\\Konstantin\\Desktop\\3курс(5сем)\\РПБДИС\\CourseProject\\MarriageAgency\\MarriageAgency\\wwwroot\\images\\2.png",
-      "PackagePath": "staticwebassets\\images\\2.png"
+      "Id": "C:\\Users\\Konstantin\\Desktop\\3курс(5сем)\\РПБДИС\\CourseProject\\MarriageAgency\\MarriageAgency\\wwwroot\\images\\337ce88f-fa20-4b21-a842-adc94b4754f5_2.png",
+      "PackagePath": "staticwebassets\\images\\337ce88f-fa20-4b21-a842-adc94b4754f5_2.png"
     },
     {
-      "Id": "C:\\Users\\Konstantin\\Desktop\\3курс(5сем)\\РПБДИС\\CourseProject\\MarriageAgency\\MarriageAgency\\wwwroot\\images\\3.png",
-      "PackagePath": "staticwebassets\\images\\3.png"
+      "Id": "C:\\Users\\Konstantin\\Desktop\\3курс(5сем)\\РПБДИС\\CourseProject\\MarriageAgency\\MarriageAgency\\wwwroot\\images\\82c66610-543a-4633-af85-922e765d442a_2.png",
+      "PackagePath": "staticwebassets\\images\\82c66610-543a-4633-af85-922e765d442a_2.png"
     },
     {
-      "Id": "C:\\Users\\Konstantin\\Desktop\\3курс(5сем)\\РПБДИС\\CourseProject\\MarriageAgency\\MarriageAgency\\wwwroot\\images\\4.png",
-      "PackagePath": "staticwebassets\\images\\4.png"
+      "Id": "C:\\Users\\Konstantin\\Desktop\\3курс(5сем)\\РПБДИС\\CourseProject\\MarriageAgency\\MarriageAgency\\wwwroot\\images\\971f6f07-1e7c-4e65-baf3-c8a42c4ad2db_5.png",
+      "PackagePath": "staticwebassets\\images\\971f6f07-1e7c-4e65-baf3-c8a42c4ad2db_5.png"
     },
     {
-      "Id": "C:\\Users\\Konstantin\\Desktop\\3курс(5сем)\\РПБДИС\\CourseProject\\MarriageAgency\\MarriageAgency\\wwwroot\\images\\5.png",
-      "PackagePath": "staticwebassets\\images\\5.png"
+      "Id": "C:\\Users\\Konstantin\\Desktop\\3курс(5сем)\\РПБДИС\\CourseProject\\MarriageAgency\\MarriageAgency\\wwwroot\\images\\af6a43e8-4763-468d-a281-a4270a3e86ff_1.png",
+      "PackagePath": "staticwebassets\\images\\af6a43e8-4763-468d-a281-a4270a3e86ff_1.png"
+    },
+    {
+      "Id": "C:\\Users\\Konstantin\\Desktop\\3курс(5сем)\\РПБДИС\\CourseProject\\MarriageAgency\\MarriageAgency\\wwwroot\\images\\da8d5441-c8a3-4ef0-9d54-9f1a6951ea91_4.png",
+      "PackagePath": "staticwebassets\\images\\da8d5441-c8a3-4ef0-9d54-9f1a6951ea91_4.png"
     },
     {
       "Id": "C:\\Users\\Konstantin\\Desktop\\3курс(5сем)\\РПБДИС\\CourseProject\\MarriageAgency\\MarriageAgency\\wwwroot\\js\\site.js",
@@ -263,6 +267,10 @@
     {
       "Id": "C:\\Users\\Konstantin\\Desktop\\3курс(5сем)\\РПБДИС\\CourseProject\\MarriageAgency\\MarriageAgency\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MarriageAgency.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MarriageAgency.Microsoft.AspNetCore.StaticWebAssets.props",

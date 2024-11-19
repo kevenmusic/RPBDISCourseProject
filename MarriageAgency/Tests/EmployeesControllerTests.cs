@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.Elfie.Diagnostics;
 using Microsoft.Extensions.Configuration;
 using Moq.EntityFrameworkCore;
+using MarriageAgency.ViewModels.SortStates;
 
 namespace Tests
 {
@@ -31,7 +32,7 @@ namespace Tests
             );
 
             // Act
-            var result = await employeesController.Index(new FilterEmployeesViewModel(), SortState.No, 1);
+            var result = await employeesController.Index(new FilterEmployeesViewModel(), EmployeeSortState.No, 1);
 
             // Assert
             var viewResult = Assert.IsType<ViewResult>(result);

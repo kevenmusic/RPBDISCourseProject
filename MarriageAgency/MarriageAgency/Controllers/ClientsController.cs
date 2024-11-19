@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using MarriageAgency.ViewModels.SortStates;
+using MarriageAgency.ViewModels.SortViewModels;
 public class ClientsController : Controller
 {
     private readonly int pageSize = 10;   // количество элементов на странице
@@ -28,7 +30,7 @@ public class ClientsController : Controller
     [ResponseCache(Location = ResponseCacheLocation.Any, Duration = 264)]
     [SetToSession("Client")]
     [Authorize]
-    public async Task<IActionResult> Index(FilterClientsViewModel client, SortState sortOrder = SortState.No, int page = 1)
+    public async Task<IActionResult> Index(FilterClientsViewModel client, ClientSortState sortOrder = ClientSortState.No, int page = 1)
     {
         if (client.ClientName == null && client.Gender == null && client.NationalityName == null
             && client.ZodiacSignName == null && client.Age == null && client.Hobbies == null)
@@ -67,7 +69,7 @@ public class ClientsController : Controller
         {
             Clients = clientsList,
             PageViewModel = new PageViewModel(count, page, pageSize),
-            SortViewModel = new SortViewModel(sortOrder),
+            SortViewModel = new ClientSortViewModel(sortOrder),
             FilterClientsViewModel = client,
         };
 
@@ -299,7 +301,7 @@ public class ClientsController : Controller
         return uniqueFileName;
     }
 
-    private static IQueryable<Client> Sort_Search(IQueryable<Client> clients, SortState sortOrder, string ClientName, string Gender, string NationalityName, string ZodiacSignName, int? Age, string Hobbies)
+    private static IQueryable<Client> Sort_Search(IQueryable<Client> clients, ClientSortState sortOrder, string ClientName, string Gender, string NationalityName, string ZodiacSignName, int? Age, string Hobbies)
     {
         clients = clients.Where(o => o.FirstName.Contains(ClientName ?? ""));
 
@@ -330,45 +332,45 @@ public class ClientsController : Controller
 
         switch (sortOrder)
         {
-            case SortState.ClientNameAsc:
+            case ClientSortState.ClientNameAsc:
                 clients = clients.OrderBy(s => s.FirstName);
                 break;
-            case SortState.ClientNameDesc:
+            case ClientSortState.ClientNameDesc:
                 clients = clients.OrderByDescending(s => s.FirstName);
                 break;
 
-            case SortState.GenderAsc:
+            case ClientSortState.GenderAsc:
                 clients = clients.OrderBy(s => s.Gender);
                 break;
-            case SortState.GenderDesc:
+            case ClientSortState.GenderDesc:
                 clients = clients.OrderByDescending(s => s.Gender);
                 break;
 
-            case SortState.NationalityAsc:
+            case ClientSortState.NationalityNameAsc:
                 clients = clients.OrderBy(s => s.Nationality.Name);
                 break;
-            case SortState.NationalityDesc:
+            case ClientSortState.NationalityNameDesc:
                 clients = clients.OrderByDescending(s => s.Nationality.Name);
                 break;
 
-            case SortState.ZodiacSignNameAsc:
+            case ClientSortState.ZodiacSignNameAsc:
                 clients = clients.OrderBy(s => s.ZodiacSign.Name);
                 break;
-            case SortState.ZodiacSignNameDesc:
+            case ClientSortState.ZodiacSignNameDesc:
                 clients = clients.OrderByDescending(s => s.ZodiacSign.Name);
                 break;
 
-            case SortState.AgeAsc:
+            case ClientSortState.AgeAsc:
                 clients = clients.OrderBy(s => s.PhysicalAttribute.Age);
                 break;
-            case SortState.AgeDesc:
+            case ClientSortState.AgeDesc:
                 clients = clients.OrderByDescending(s => s.PhysicalAttribute.Age);
                 break;
 
-            case SortState.HobbiesAsc:
+            case ClientSortState.HobbiesAsc:
                 clients = clients.OrderBy(s => s.PhysicalAttribute.Hobbies);
                 break;
-            case SortState.HobbiesDesc:
+            case ClientSortState.HobbiesDesc:
                 clients = clients.OrderByDescending(s => s.PhysicalAttribute.Hobbies);
                 break;
 

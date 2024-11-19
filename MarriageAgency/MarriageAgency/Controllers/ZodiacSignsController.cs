@@ -3,12 +3,14 @@ using MarriageAgency.DataLayer.Models;
 using MarriageAgency.Infrastructure;
 using MarriageAgency.Infrastructure.Filters;
 using MarriageAgency.ViewModels;
-using MarriageAgency.ViewModels.NationalitiesViewModel;
+using MarriageAgency.ViewModels.SortStates;
 using MarriageAgency.ViewModels.ZodiacSignsViewModel;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using MarriageAgency.ViewModels.SortViewModels;
+
 namespace MarriageAgency.Controllers
 {
     public class ZodiacSignsController : Controller
@@ -29,7 +31,7 @@ namespace MarriageAgency.Controllers
         [ResponseCache(Location = ResponseCacheLocation.Any, Duration = 264)]
         [SetToSession("ZodiacSign")]
         [Authorize]
-        public async Task<IActionResult> Index(FilterZodiacSignsViewModel zodiacSign, SortState sortOrder = SortState.No, int page = 1)
+        public async Task<IActionResult> Index(FilterZodiacSignsViewModel zodiacSign, ZodiacSignSortState sortOrder = ZodiacSignSortState.No, int page = 1)
         {
             if (zodiacSign.ZodiacSignName == null)
             {
@@ -59,7 +61,7 @@ namespace MarriageAgency.Controllers
             {
                 ZodiacSigns = zodiacSignList,
                 PageViewModel = new PageViewModel(count, page, pageSize),
-                SortViewModel = new SortViewModel(sortOrder),
+                SortViewModel = new ZodiacSignSortViewModel(sortOrder),
                 FilterZodiacSignsViewModel = zodiacSign,
             };
 
@@ -201,7 +203,7 @@ namespace MarriageAgency.Controllers
             return _context.ZodiacSigns.Any(e => e.ZodiacSignId == id);
         }
 
-        private static IQueryable<ZodiacSign> Sort_Search(IQueryable<ZodiacSign> zodiacSigns, SortState sortOrder, string zodiacSignName)
+        private static IQueryable<ZodiacSign> Sort_Search(IQueryable<ZodiacSign> zodiacSigns, ZodiacSignSortState sortOrder, string zodiacSignName)
         {
             if (!string.IsNullOrEmpty(zodiacSignName))
             {
@@ -210,10 +212,10 @@ namespace MarriageAgency.Controllers
 
             switch (sortOrder)
             {
-                case SortState.ZodiacSignNameAsc:
+                case ZodiacSignSortState.ZodiacSignNameAsc:
                     zodiacSigns = zodiacSigns.OrderBy(s => s.Name);
                     break;
-                case SortState.ZodiacSignNameDesc:
+                case ZodiacSignSortState.ZodiacSignNameDesc:
                     zodiacSigns = zodiacSigns.OrderByDescending(s => s.Name);
                     break;
                 default:

@@ -1,5 +1,5 @@
 ﻿using MarriageAgency.DataLayer.Models;
-using MarriageAgency.ViewModels.ServicesViewModel;
+using MarriageAgency.ViewModels.SortViewModels;
 
 namespace MarriageAgency.ViewModels.ZodiacSignsViewModel
 {
@@ -12,6 +12,6 @@ namespace MarriageAgency.ViewModels.ZodiacSignsViewModel
         //Свойство для навигации по страницам
         public PageViewModel PageViewModel { get; set; }
 
-        public SortViewModel SortViewModel { get; set; }
+        public ZodiacSignSortViewModel SortViewModel { get; set; }
     }
 }

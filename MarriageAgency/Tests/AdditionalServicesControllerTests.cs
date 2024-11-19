@@ -1,8 +1,7 @@
 ﻿using MarriageAgency.DataLayer.Data;
 using MarriageAgency.DataLayer.Models;
 using MarriageAgency.ViewModels.AdditionalServicesViewModel;
-using MarriageAgency.ViewModels;
-using Microsoft.AspNetCore.Hosting;
+using MarriageAgency.ViewModels.SortStates;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Moq.EntityFrameworkCore;
@@ -30,7 +29,7 @@ namespace Tests
             );
 
             // Act
-            var result = await additionalServicesController.Index(new FilterAdditionalServicesViewModel(), SortState.No, 1);
+            var result = await additionalServicesController.Index(new FilterAdditionalServicesViewModel(), AdditionalServiceSortState.No, 1);
 
             // Assert
             var viewResult = Assert.IsType<ViewResult>(result);

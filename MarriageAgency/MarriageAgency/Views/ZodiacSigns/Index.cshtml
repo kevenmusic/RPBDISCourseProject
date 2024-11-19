@@ -1,4 +1,5 @@
 ﻿@using MarriageAgency.ViewModels.ZodiacSignsViewModel;
+@using MarriageAgency.ViewModels.SortStates;
 @model ZodiacSignsViewModel;
 
 @{
@@ -30,11 +31,11 @@
                 @Html.DisplayNameFor(model => model.FilterZodiacSignsViewModel.ZodiacSignName)
                 <a asp-action="Index" asp-route-sortOrder="@Model.SortViewModel.ZodiacSignNameSort" asp-route-ZodiacSignName="@ZodiacSignName"
                    style="color: inherit; text-decoration: none; display: inline-flex; align-items: center;">
-                    @if (Model.SortViewModel.ZodiacSignNameSort == SortState.ZodiacSignNameAsc)
+                    @if (Model.SortViewModel.ZodiacSignNameSort == ZodiacSignSortState.ZodiacSignNameAsc)
                     {
                         <span class="bi bi-arrow-up" style="margin-left: 5px;"></span>
                     }
-                    else if (Model.SortViewModel.ZodiacSignNameSort == SortState.ZodiacSignNameDesc)
+                    else if (Model.SortViewModel.ZodiacSignNameSort == ZodiacSignSortState.ZodiacSignNameDesc)
                     {
                         <span class="bi bi-arrow-down" style="margin-left: 5px;"></span>
                     }

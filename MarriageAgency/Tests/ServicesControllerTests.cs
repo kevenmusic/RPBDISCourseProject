@@ -5,6 +5,7 @@ using MarriageAgency.ViewModels.ServicesViewModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Moq.EntityFrameworkCore;
+using MarriageAgency.ViewModels.SortStates;
 
 namespace Tests
 {
@@ -31,7 +32,7 @@ namespace Tests
             );
 
             // Act
-            var result = await servicesController.Index(new FilterServicesViewModel(), SortState.No, 1);
+            var result = await servicesController.Index(new FilterServicesViewModel(), ServiceSortState.No, 1);
 
             // Assert
             var viewResult = Assert.IsType<ViewResult>(result);

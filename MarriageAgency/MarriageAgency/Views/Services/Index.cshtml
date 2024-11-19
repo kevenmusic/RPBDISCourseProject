@@ -1,4 +1,5 @@
 ﻿@using MarriageAgency.ViewModels.ServicesViewModel;
+@using MarriageAgency.ViewModels.SortStates;
 @model ServicesViewModel
 
 @{
@@ -46,11 +47,11 @@
                 <a asp-action="Index" asp-route-sortOrder="@Model.SortViewModel.ClientNameSort" asp-route-ClientName="@ClientName" asp-route-EmployeeName="@EmployeeName" asp-route-AdditionalServiceName="@AdditionalServiceName" asp-route-MinCost="@MinCost" asp-route-MaxCost="@MaxCost" style="color: inherit; text-decoration: none; display: inline-flex; align-items: center;">
                     @Html.DisplayNameFor(model => model.FilterServicesViewModel.ClientName)
 
-                    @if (Model.SortViewModel.ClientNameSort == SortState.ClientNameAsc)
+                    @if (Model.SortViewModel.ClientNameSort == ServiceSortState.ClientNameAsc)
                     {
                         <span class="bi bi-arrow-up" style="margin-left: 5px;"></span>
                     }
-                    else if (Model.SortViewModel.ClientNameSort == SortState.ClientNameDesc)
+                    else if (Model.SortViewModel.ClientNameSort == ServiceSortState.ClientNameDesc)
                     {
                         <span class="bi bi-arrow-down" style="margin-left: 5px;"></span>
                     }
@@ -61,11 +62,11 @@
                 <a asp-action="Index" asp-route-sortOrder="@Model.SortViewModel.EmployeeNameSort" asp-route-ClientName="@ClientName" asp-route-EmployeeName="@EmployeeName" asp-route-AdditionalServiceName="@AdditionalServiceName" asp-route-MinCost="@MinCost" asp-route-MaxCost="@MaxCost" style="color: inherit; text-decoration: none; display: inline-flex; align-items: center;">
                     @Html.DisplayNameFor(model => model.FilterServicesViewModel.EmployeeName)
 
-                    @if (Model.SortViewModel.EmployeeNameSort == SortState.EmployeeNameAsc)
+                    @if (Model.SortViewModel.EmployeeNameSort == ServiceSortState.EmployeeNameAsc)
                     {
                         <span class="bi bi-arrow-up" style="margin-left: 5px;"></span>
                     }
-                    else if (Model.SortViewModel.EmployeeNameSort == SortState.EmployeeNameDesc)
+                    else if (Model.SortViewModel.EmployeeNameSort == ServiceSortState.EmployeeNameDesc)
                     {
                         <span class="bi bi-arrow-down" style="margin-left: 5px;"></span>
                     }
@@ -76,11 +77,11 @@
                 <a asp-action="Index" asp-route-sortOrder="@Model.SortViewModel.AdditionalNameSort" asp-route-ClientName="@ClientName" asp-route-EmployeeName="@EmployeeName" asp-route-AdditionalServiceName="@AdditionalServiceName" asp-route-MinCost="@MinCost" asp-route-MaxCost="@MaxCost" style="color: inherit; text-decoration: none; display: inline-flex; align-items: center;">
                     @Html.DisplayNameFor(model => model.FilterServicesViewModel.AdditionalServiceName)
 
-                    @if (Model.SortViewModel.AdditionalNameSort == SortState.AdditionalNameAsc)
+                    @if (Model.SortViewModel.AdditionalNameSort == ServiceSortState.AdditionalNameAsc)
                     {
                         <span class="bi bi-arrow-up" style="margin-left: 5px;"></span>
                     }
-                    else if (Model.SortViewModel.AdditionalNameSort == SortState.AdditionalNameDesc)
+                    else if (Model.SortViewModel.AdditionalNameSort == ServiceSortState.AdditionalNameDesc)
                     {
                         <span class="bi bi-arrow-down" style="margin-left: 5px;"></span>
                     }
@@ -95,11 +96,11 @@
                 <a asp-action="Index" asp-route-sortOrder="@Model.SortViewModel.CostSort" asp-route-ClientName="@ClientName" asp-route-EmployeeName="@EmployeeName" asp-route-AdditionalServiceName="@AdditionalServiceName" asp-route-MinCost="@MinCost" asp-route-MaxCost="@MaxCost" style="color: inherit; text-decoration: none; display: inline-flex; align-items: center;">
                     @Html.DisplayNameFor(model => model.FilterServicesViewModel.Cost)
 
-                    @if (Model.SortViewModel.CostSort == SortState.CostAsc)
+                    @if (Model.SortViewModel.CostSort == ServiceSortState.CostAsc)
                     {
                         <span class="bi bi-arrow-up" style="margin-left: 5px;"></span>
                     }
-                    else if (Model.SortViewModel.CostSort == SortState.CostDesc)
+                    else if (Model.SortViewModel.CostSort == ServiceSortState.CostDesc)
                     {
                         <span class="bi bi-arrow-down" style="margin-left: 5px;"></span>
                     }

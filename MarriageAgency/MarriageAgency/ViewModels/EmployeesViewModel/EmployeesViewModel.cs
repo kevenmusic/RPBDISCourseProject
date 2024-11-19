@@ -1,5 +1,5 @@
 ﻿using MarriageAgency.DataLayer.Models;
-using System.ComponentModel.DataAnnotations;
+using MarriageAgency.ViewModels.SortViewModels;
 
 namespace MarriageAgency.ViewModels.EmployeesViewModel
 {
@@ -12,6 +12,6 @@ namespace MarriageAgency.ViewModels.EmployeesViewModel
         //Свойство для навигации по страницам
         public PageViewModel PageViewModel { get; set; }
         // Порядок сортировки
-        public SortViewModel SortViewModel { get; set; }
+        public EmployeeSortViewModel SortViewModel { get; set; }
     }
 }

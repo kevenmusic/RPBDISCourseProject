@@ -1,12 +1,10 @@
 ﻿using MarriageAgency.DataLayer.Data;
 using MarriageAgency.DataLayer.Models;
 using MarriageAgency.ViewModels.ContactsViewModel;
-using MarriageAgency.ViewModels;
-using Microsoft.AspNetCore.Hosting;
+using MarriageAgency.ViewModels.SortStates;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Moq.EntityFrameworkCore;
-using MarriageAgency.ViewModels.AdditionalServicesViewModel;
 
 namespace Tests
 {
@@ -31,7 +29,7 @@ namespace Tests
             );
 
             // Act
-            var result = await contactsController.Index(new FilterContactsViewModel(), SortState.No, 1);
+            var result = await contactsController.Index(new FilterContactsViewModel(), ContactSortState.No, 1);
 
             // Assert
             var viewResult = Assert.IsType<ViewResult>(result);

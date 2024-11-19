@@ -5,6 +5,7 @@ using MarriageAgency.ViewModels.ZodiacSignsViewModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Moq.EntityFrameworkCore;
+using MarriageAgency.ViewModels.SortStates;
 
 namespace Tests
 {
@@ -29,7 +30,7 @@ namespace Tests
             );
 
             // Act
-            var result = await zodiacSignsController.Index(new FilterZodiacSignsViewModel(), SortState.No, 1);
+            var result = await zodiacSignsController.Index(new FilterZodiacSignsViewModel(), ZodiacSignSortState.No, 1);
 
             // Assert
             var viewResult = Assert.IsType<ViewResult>(result);

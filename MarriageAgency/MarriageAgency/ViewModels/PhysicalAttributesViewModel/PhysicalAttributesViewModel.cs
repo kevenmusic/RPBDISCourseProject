@@ -1,5 +1,6 @@
 ﻿using MarriageAgency.DataLayer.Models;
-using MarriageAgency.ViewModels.ClientsViewModel;
+using MarriageAgency.ViewModels.SortViewModels;
+
 
 namespace MarriageAgency.ViewModels.PhysicalAttributesViewModel
 {
@@ -12,6 +13,6 @@ namespace MarriageAgency.ViewModels.PhysicalAttributesViewModel
         //Свойство для навигации по страницам
         public PageViewModel PageViewModel { get; set; }
         // Порядок сортировки
-        public SortViewModel SortViewModel { get; set; }
+        public PhysicalAttributeSortViewModel SortViewModel { get; set; }
     }
 }

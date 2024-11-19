@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MarriageAgency.ViewModels.NationalitiesViewModel;
+using MarriageAgency.ViewModels.SortStates;
+using MarriageAgency.ViewModels.SortViewModels;
 
 namespace MarriageAgency.Controllers
 {
@@ -30,7 +32,7 @@ namespace MarriageAgency.Controllers
         [ResponseCache(Location = ResponseCacheLocation.Any, Duration = 264)]
         [SetToSession("Nationality")]
         [Authorize]
-        public async Task<IActionResult> Index(FilterNationalitiesViewModel nationality, SortState sortOrder = SortState.No, int page = 1)
+        public async Task<IActionResult> Index(FilterNationalitiesViewModel nationality, NationalitySortState sortOrder = NationalitySortState.No, int page = 1)
         {
             if (nationality.NationalityName == null)
             {
@@ -60,7 +62,7 @@ namespace MarriageAgency.Controllers
             {
                 Nationalities = nationalityList,
                 PageViewModel = new PageViewModel(count, page, pageSize),
-                SortViewModel = new SortViewModel(sortOrder),
+                SortViewModel = new NationalitySortViewModel(sortOrder),
                 FilterNationalitiesViewModel = nationality,
             };
 
@@ -202,7 +204,7 @@ namespace MarriageAgency.Controllers
             return _context.Nationalities.Any(e => e.NationalityId == id);
         }
 
-        private static IQueryable<Nationality> Sort_Search(IQueryable<Nationality> nationalities, SortState sortOrder, string nationalityName)
+        private static IQueryable<Nationality> Sort_Search(IQueryable<Nationality> nationalities, NationalitySortState sortOrder, string nationalityName)
         {
             if (!string.IsNullOrEmpty(nationalityName))
             {
@@ -211,10 +213,10 @@ namespace MarriageAgency.Controllers
 
             switch (sortOrder)
             {
-                case SortState.NationalityNameAsc:
+                case NationalitySortState.NationalityNameAsc:
                     nationalities = nationalities.OrderBy(s => s.Name);
                     break;
-                case SortState.NationalityNameDesc:
+                case NationalitySortState.NationalityNameDesc:
                     nationalities = nationalities.OrderByDescending(s => s.Name);
                     break;
                 default:

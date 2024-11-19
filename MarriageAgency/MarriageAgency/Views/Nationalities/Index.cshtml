@@ -1,4 +1,5 @@
 ﻿@using MarriageAgency.ViewModels.NationalitiesViewModel;
+@using MarriageAgency.ViewModels.SortStates;
 @model NationalitiesViewModel;
 
 @{
@@ -30,11 +31,11 @@
                 @Html.DisplayNameFor(model => model.FilterNationalitiesViewModel.NationalityName)
                 <a asp-action="Index" asp-route-sortOrder="@Model.SortViewModel.NationalityNameSort" asp-route-NationalityName="@NationalityName"
                    style="color: inherit; text-decoration: none; display: inline-flex; align-items: center;">
-                    @if (Model.SortViewModel.NationalityNameSort == SortState.NationalityNameAsc)
+                    @if (Model.SortViewModel.NationalityNameSort == NationalitySortState.NationalityNameAsc)
                     {
                         <span class="bi bi-arrow-up" style="margin-left: 5px;"></span>
                     }
-                    else if (Model.SortViewModel.NationalityNameSort == SortState.NationalityNameDesc)
+                    else if (Model.SortViewModel.NationalityNameSort == NationalitySortState.NationalityNameDesc)
                     {
                         <span class="bi bi-arrow-down" style="margin-left: 5px;"></span>
                     }
