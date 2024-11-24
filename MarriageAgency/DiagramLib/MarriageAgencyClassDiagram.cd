@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MarriageAgency.DataLayer.Data.DbInitializer" Collapsed="true">
+    <Position X="4" Y="12.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.DataLayer.Data.MarriageAgencyContext">
+    <Position X="6.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.DataLayer.Models.AdditionalService">
+    <Position X="11" Y="10.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.DataLayer.Models.Client">
+    <Position X="9.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.DataLayer.Models.Contact">
+    <Position X="12.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.DataLayer.Models.Employee">
+    <Position X="7.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.DataLayer.Models.Nationality">
+    <Position X="5.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.DataLayer.Models.PhysicalAttribute">
+    <Position X="0.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.DataLayer.Models.Service">
+    <Position X="2.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.DataLayer.Models.ZodiacSign">
+    <Position X="4" Y="10.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.Controllers.AdditionalServicesController">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.Controllers.ContactsController">
+    <Position X="4" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.Controllers.EmployeesController">
+    <Position X="5.75" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.Controllers.HomeController">
+    <Position X="7.5" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.Controllers.NationalitiesController">
+    <Position X="9.25" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.Controllers.PhysicalAttributesController">
+    <Position X="11" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.Controllers.ServicesController">
+    <Position X="14.5" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.Controllers.UsersController">
+    <Position X="16.25" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.Controllers.ZodiacSignsController">
+    <Position X="18" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ClientsController">
+    <Position X="2.25" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="CustomIdentityApp.Controllers.RolesController">
+    <Position X="12.75" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.Data.ApplicationDbContext" Collapsed="true">
+    <Position X="14.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.Data.DbUserInitializer" Collapsed="true">
+    <Position X="10.75" Y="8.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.Models.ApplicationUser" Collapsed="true">
+    <Position X="14.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.Users.ChangePasswordViewModel" Collapsed="true">
+    <Position X="12.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.Users.CreateUserViewModel" Collapsed="true">
+    <Position X="16" Y="8.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.Users.EditUserViewModel" Collapsed="true">
+    <Position X="16" Y="9.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.Users.UserViewModel" Collapsed="true">
+    <Position X="12.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.Roles.ChangeRoleViewModel" Collapsed="true">
+    <Position X="10.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.Areas.Identity.Pages.Account.LoginModel" Collapsed="true">
+    <Position X="8.75" Y="8" Width="1.5" />
+    <NestedTypes>
+      <Class Name="MarriageAgency.Areas.Identity.Pages.Account.LoginModel.InputModel" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.Areas.Identity.Pages.Account.LogoutModel" Collapsed="true">
+    <Position X="8.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.Areas.Identity.Pages.Account.RegisterModel" Collapsed="true">
+    <Position X="8.75" Y="8.75" Width="1.5" />
+    <NestedTypes>
+      <Class Name="MarriageAgency.Areas.Identity.Pages.Account.RegisterModel.InputModel" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.Infrastructure.Filters.ExceptionFilterAttribute" Collapsed="true">
+    <Position X="2.25" Y="8" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.Infrastructure.Filters.SetToSessionAttribute" Collapsed="true">
+    <Position X="2.25" Y="9" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.Infrastructure.SessionExtensions" Collapsed="true">
+    <Position X="4" Y="8" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.Infrastructure.Transformations" Collapsed="true">
+    <Position X="4" Y="9" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.Services.ServiceService" Collapsed="true">
+    <Position X="17.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.ServicesViewModel.FilterServicesViewModel">
+    <Position X="11.75" Y="20.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.ServicesViewModel.ServicesViewModel">
+    <Position X="11.75" Y="17.75" Width="1.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="FilterServicesViewModel" />
+      <Property Name="SortViewModel" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.PhysicalAttributesViewModel.FilterPhysicalAttributesViewModel">
+    <Position X="10" Y="20.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.PhysicalAttributesViewModel.PhysicalAttributesViewModel">
+    <Position X="10" Y="17.75" Width="1.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="FilterPhysicalAttributesViewModel" />
+      <Property Name="SortViewModel" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.AdditionalServicesViewModel.AdditionalServicesViewModel">
+    <Position X="0.5" Y="17.75" Width="1.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="FilterAdditionalServicesViewModel" />
+      <Property Name="SortViewModel" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.AdditionalServicesViewModel.FilterAdditionalServicesViewModel">
+    <Position X="0.5" Y="20.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.EmployeesViewModel.EmployeesViewModel">
+    <Position X="5.75" Y="17.75" Width="1.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="FilterEmployeesViewModel" />
+      <Property Name="SortViewModel" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.EmployeesViewModel.FilterEmployeesViewModel">
+    <Position X="5.75" Y="20.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.ZodiacSignsViewModel.FilterZodiacSignsViewModel">
+    <Position X="13.5" Y="20.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.ZodiacSignsViewModel.ZodiacSignsViewModel">
+    <Position X="13.5" Y="17.75" Width="1.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="FilterZodiacSignsViewModel" />
+      <Property Name="SortViewModel" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.ClientsViewModel.ClientsViewModel">
+    <Position X="2.25" Y="17.75" Width="1.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="FilterClientsViewModel" />
+      <Property Name="SortViewModel" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.ClientsViewModel.FilterClientsViewModel">
+    <Position X="2.25" Y="20.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.NationalitiesViewModel.FilterNationalitiesViewModel">
+    <Position X="7.75" Y="20.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.NationalitiesViewModel.NationalitiesViewModel">
+    <Position X="7.75" Y="17.75" Width="1.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="FilterNationalitiesViewModel" />
+      <Property Name="SortViewModel" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.ContactsViewModel.ContactsViewModel">
+    <Position X="4" Y="17.75" Width="1.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="FilterContactsViewModel" />
+      <Property Name="SortViewModel" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.ContactsViewModel.FilterContactsViewModel">
+    <Position X="4" Y="20.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.SortStates.AdditionalServiceSortState" Collapsed="true">
+    <Position X="14.5" Y="10.5" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.SortStates.ClientSortState" Collapsed="true">
+    <Position X="17" Y="10.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.SortStates.ContactSortState" Collapsed="true">
+    <Position X="18.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.SortStates.EmployeeSortState" Collapsed="true">
+    <Position X="14.5" Y="11.5" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.SortStates.NationalitySortState" Collapsed="true">
+    <Position X="16.5" Y="11.5" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.SortStates.PhysicalAttributeSortState" Collapsed="true">
+    <Position X="18.5" Y="11.5" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.SortStates.ServiceSortState" Collapsed="true">
+    <Position X="14.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.SortStates.ZodiacSignSortState" Collapsed="true">
+    <Position X="16.25" Y="12.5" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.SortViewModels.AdditionalServiceSortViewModel">
+    <Position X="0.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.SortViewModels.ClientSortViewModel">
+    <Position X="2.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.SortViewModels.ContactSortViewModel">
+    <Position X="4" Y="15.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.SortViewModels.EmployeeSortViewModel">
+    <Position X="5.75" Y="15" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.SortViewModels.NationalitySortViewModel">
+    <Position X="7.75" Y="15.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.SortViewModels.PhysicalAttributeSortViewModel">
+    <Position X="10" Y="15.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.SortViewModels.ServiceSortViewModel">
+    <Position X="11.75" Y="15" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.SortViewModels.ZodiacSignSortViewModel">
+    <Position X="13.5" Y="15" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.ViewModels.PageViewModel">
+    <Position X="15.25" Y="15" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MarriageAgency.TagHelpers.PageLinkTagHelper">
+    <Position X="17" Y="15" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="MarriageAgency.Services.IServiceService" Collapsed="true">
+    <Position X="17.75" Y="9" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

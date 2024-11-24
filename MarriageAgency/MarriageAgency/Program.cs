@@ -1,12 +1,10 @@
+using MarriageAgency.Data;
 using MarriageAgency.DataLayer.Data;
+using MarriageAgency.Middleware;
 using MarriageAgency.Models;
+using MarriageAgency.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using MarriageAgency.Services;
-using MarriageAgency.Middleware;
-using MarriageAgency.Data;
-using System.Configuration;
-using MarriageAgency.DataLayer.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 

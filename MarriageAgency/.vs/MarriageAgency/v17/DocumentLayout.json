@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E143D1A5-1960-48E3-B5E0-F95AA59CA035}|DiagramLib\\DiagramLib.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\diagramlib\\marriageagencyclassdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{E143D1A5-1960-48E3-B5E0-F95AA59CA035}|DiagramLib\\DiagramLib.csproj|solutionrelative:diagramlib\\marriageagencyclassdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{531EAB06-A968-4A79-80F9-66621304B201}|DataLayer\\DataLayer.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\datalayer\\data\\marriageagencycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{531EAB06-A968-4A79-80F9-66621304B201}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\data\\marriageagencycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{531EAB06-A968-4A79-80F9-66621304B201}|DataLayer\\DataLayer.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\datalayer\\models\\additionalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{531EAB06-A968-4A79-80F9-66621304B201}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\additionalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{531EAB06-A968-4A79-80F9-66621304B201}|DataLayer\\DataLayer.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\datalayer\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{531EAB06-A968-4A79-80F9-66621304B201}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|c:\\users\\konstantin\\desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0440\u043F\u0431\u0434\u0438\u0441\\courseproject\\marriageagency\\marriageagency\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA40BFC1-7B05-41E3-A7D8-DFC45B4924C1}|MarriageAgency\\MarriageAgency.csproj|solutionrelative:marriageagency\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,15 +30,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Program.cs",
+              "RelativeDocumentMoniker": "MarriageAgency\\Program.cs",
+              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\MarriageAgency\\Program.cs",
+              "RelativeToolTip": "MarriageAgency\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T17:32:08.813Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdditionalService.cs",
+              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\DataLayer\\Models\\AdditionalService.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Models\\AdditionalService.cs",
+              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\DataLayer\\Models\\AdditionalService.cs",
+              "RelativeToolTip": "DataLayer\\Models\\AdditionalService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAqwBIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T12:59:47.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\DataLayer\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Models\\Client.cs",
+              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\DataLayer\\Models\\Client.cs",
+              "RelativeToolTip": "DataLayer\\Models\\Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T12:56:00.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MarriageAgencyContext.cs",
+              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\DataLayer\\Data\\MarriageAgencyContext.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Data\\MarriageAgencyContext.cs",
+              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\DataLayer\\Data\\MarriageAgencyContext.cs",
+              "RelativeToolTip": "DataLayer\\Data\\MarriageAgencyContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T12:08:22.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MarriageAgencyClassDiagram.cd",
+              "DocumentMoniker": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\DiagramLib\\MarriageAgencyClassDiagram.cd",
+              "RelativeDocumentMoniker": "DiagramLib\\MarriageAgencyClassDiagram.cd",
+              "ToolTip": "C:\\Users\\Konstantin\\Desktop\\3\u043A\u0443\u0440\u0441(5\u0441\u0435\u043C)\\\u0420\u041F\u0411\u0414\u0418\u0421\\CourseProject\\MarriageAgency\\DiagramLib\\MarriageAgencyClassDiagram.cd",
+              "RelativeToolTip": "DiagramLib\\MarriageAgencyClassDiagram.cd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
+              "WhenOpened": "2024-11-24T11:28:18.597Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }
